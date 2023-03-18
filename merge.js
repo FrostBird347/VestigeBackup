@@ -3,13 +3,6 @@ function MergeCSV(OldCSV, NewCSV) {
 	let ReachedNewData = false;
 	
 	for (let i = 4; i < NewCSV.length; i++) {
-		//if (i > 41869) {
-		//print(NewCSV[i - 4].replace("\n", "") + ":" + OldCSV[OldCSV.length - 4]);
-		//print(NewCSV[i - 3].replace("\n", "") + ":" + OldCSV[OldCSV.length - 3]);
-		//print(NewCSV[i - 2].replace("\n", "") + ":" + OldCSV[OldCSV.length - 2]);
-		//print(NewCSV[i - 1].replace("\n", "") + ":" + OldCSV[OldCSV.length - 1]);
-		//print("-----");
-		//}
 		if (ReachedNewData || (
 		  NewCSV[i - 4] == OldCSV[OldCSV.length - 4] &&
 		  NewCSV[i - 3] == OldCSV[OldCSV.length - 3] &&
