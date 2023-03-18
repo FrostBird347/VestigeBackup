@@ -1,2 +1,2 @@
 # VestigeBackup
- A backup containing every vestige past the one month lifespan
+ A backup containing [Vestiges](https://github.com/FrostBird347/Vestiges) older than a month.
