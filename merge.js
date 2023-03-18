@@ -19,7 +19,7 @@ function MergeCSV(OldCSV, NewCSV) {
 function ReadInput() {
 	let CSVFiles = [decodeURIComponent(escape(readline())), ""];
 	let FileIndex = 0;
-	let CurrentLine = decodeURIComponent(escape(readline()))
+	let CurrentLine = decodeURIComponent(escape(readline()));
 	
 	while (CurrentLine != "") {
 		if (CurrentLine == "-----NEXTFILE-----") {
