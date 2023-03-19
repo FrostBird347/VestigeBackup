@@ -11,5 +11,10 @@ rm ./LatestDL.csv
 cat ./Merged.csv > ./VestigeBackup.csv
 rm ./Merged.csv
 
-git add ./VestigeBackup.csv
+
+python3 ./GenGraphs.py
+
+/Applications/ImageOptim.app/Contents/MacOS/ImageOptim ./RegionFreq.png ./RegionCount.png ./SpawnPos.png ./TargetPos.png ./UniqSpawnPos.png ./UniqTargetPos.png ./SlugcatFreq.png  2>/dev/null
+
+git add ./VestigeBackup.csv ./RegionFreq.png ./RegionCount.png ./SpawnPos.png ./TargetPos.png ./UniqSpawnPos.png ./UniqTargetPos.png ./SlugcatFreq.png
 git commit -m "Updated backup: $OldLineCount -> $(wc -l ./VestigeBackup.csv  | awk '{ print $1 }')"
