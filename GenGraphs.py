@@ -148,7 +148,7 @@ ax.set_title('Region Frequency')
 ax.set_xlabel('Days since 26/02/2023 (UCT)')
 ax.set_ylabel('Vestiges')
 
-plt.savefig('RegionFreq.png')
+plt.savefig('RegionFreq.svg', metadata={'Date': None})
 #plt.show()
 plt.close()
 
@@ -169,7 +169,7 @@ fig.set_figwidth(1 + len(regioncounts.keys()) / 6)
 
 ax.set_title('Region Frequency', y=1.08)
 
-plt.savefig('RegionCount.png')
+plt.savefig('RegionCount.svg', metadata={'Date': None})
 #plt.show()
 plt.close()
 
@@ -181,7 +181,7 @@ seaborn.jointplot(x=spawnx, y=spawny, height=10, kind='hist', xlim=(-50, 500), y
 plt.suptitle('Death Positions')
 plt.tight_layout()
 
-plt.savefig('SpawnPos.png')
+plt.savefig('SpawnPos.png', metadata={'Date': None})
 #plt.show()
 plt.close()
 
@@ -193,7 +193,7 @@ seaborn.jointplot(x=targetx, y=targety, height=10, kind='hist', xlim=(-50, 500),
 plt.suptitle('Hover Positions')
 plt.tight_layout()
 
-plt.savefig('TargetPos.png')
+plt.savefig('TargetPos.png', metadata={'Date': None})
 #plt.show()
 plt.close()
 
@@ -205,7 +205,7 @@ seaborn.jointplot(x=uniqspawnx, y=uniqspawny, height=10, kind='hist', xlim=(-50,
 plt.suptitle('Death Positions (values with a duplicate hover pos were removed)')
 plt.tight_layout()
 
-plt.savefig('UniqSpawnPos.png')
+plt.savefig('UniqSpawnPos.png', metadata={'Date': None})
 #plt.show()
 plt.close()
 
@@ -217,7 +217,7 @@ seaborn.jointplot(x=uniqtargetx, y=uniqtargety, height=10, kind='hist', xlim=(-5
 plt.suptitle('Hover Positions (values with a duplicate spawn pos were removed)')
 plt.tight_layout()
 
-plt.savefig('UniqTargetPos.png')
+plt.savefig('UniqTargetPos.png', metadata={'Date': None})
 #plt.show()
 plt.close()
 
@@ -245,6 +245,6 @@ ax.set_title('Slugcat Frequency')
 ax.set_xlabel('Days since 26/02/2023 (UCT)')
 ax.set_ylabel('Vestiges')
 
-plt.savefig('SlugcatFreq.png')
+plt.savefig('SlugcatFreq.svg', metadata={'Date': None})
 #plt.show()
 plt.close()

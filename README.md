@@ -13,8 +13,8 @@ Graphs:
 
 ![Hover Positions](./SpawnPos.png)![Unique Hover Positions](./UniqTargetPos.png)
 
-![Region Percentage](./RegionCount.png)
+![Region Percentage](./RegionCount.svg)
 
-![Slugcat Frequency](./SlugcatFreq.png)
+![Slugcat Frequency](./SlugcatFreq.svg)
 
-![Region Frequency](./RegionFreq.png)
+![Region Frequency](./RegionFreq.svg)
