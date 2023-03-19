@@ -138,9 +138,9 @@ ax.set_prop_cycle('color', colours)
 
 ax.stackplot(timestamps, np.vstack(frequencydata.values()), labels=frequencydata.keys())
 
-fig.legend(loc='outside lower center', fontsize='x-small', ncol=len(frequencydata.keys()))
+fig.legend(loc='outside lower center', fontsize='x-small', ncol=(len(frequencydata.keys()) / 1.5))
 fig.set_figheight(10)
-fig.set_figwidth(len(frequencydata.keys()) / 1.5)
+fig.set_figwidth(len(frequencydata.keys()) / 2.25)
 ax.set_xticks(timestamps)
 ax.set_xlim(left=0, right=(timestamps[len(timestamps) - 2])) #Don't count the last day
 
@@ -177,7 +177,7 @@ plt.close()
 
 
 
-seaborn.jointplot(x=spawnx, y=spawny, height=10, kind='hist', xlim=(-50, 500), ylim=(-50, 400), cmap=cm.jet, marginal_ticks=True)
+seaborn.jointplot(x=spawnx, y=spawny, height=10, kind='hist', xlim=(-50, 500), ylim=(-50, 400), cmap=cm.gnuplot2, marginal_ticks=True, cbar=True)
 plt.suptitle('Death Positions')
 plt.tight_layout()
 
@@ -189,7 +189,7 @@ plt.close()
 
 
 
-seaborn.jointplot(x=targetx, y=targety, height=10, kind='hist', xlim=(-50, 500), ylim=(-50, 400), cmap=cm.jet, marginal_ticks=True)
+seaborn.jointplot(x=targetx, y=targety, height=10, kind='hist', xlim=(-50, 500), ylim=(-50, 400), cmap=cm.gnuplot2, marginal_ticks=True, cbar=True)
 plt.suptitle('Hover Positions')
 plt.tight_layout()
 
@@ -201,7 +201,7 @@ plt.close()
 
 
 
-seaborn.jointplot(x=uniqspawnx, y=uniqspawny, height=10, kind='hist', xlim=(-50, 500), ylim=(-50, 400), cmap=cm.jet, marginal_ticks=True)
+seaborn.jointplot(x=uniqspawnx, y=uniqspawny, height=10, kind='hist', xlim=(-50, 500), ylim=(-50, 400), cmap=cm.gnuplot2, marginal_ticks=True, cbar=True)
 plt.suptitle('Death Positions (values with a duplicate hover pos were removed)')
 plt.tight_layout()
 
@@ -213,7 +213,7 @@ plt.close()
 
 
 
-seaborn.jointplot(x=uniqtargetx, y=uniqtargety, height=10, kind='hist', xlim=(-50, 500), ylim=(-50, 400), cmap=cm.jet, marginal_ticks=True)
+seaborn.jointplot(x=uniqtargetx, y=uniqtargety, height=10, kind='hist', xlim=(-50, 500), ylim=(-50, 400), cmap=cm.gnuplot2, marginal_ticks=True, cbar=True)
 plt.suptitle('Hover Positions (values with a duplicate spawn pos were removed)')
 plt.tight_layout()
 
