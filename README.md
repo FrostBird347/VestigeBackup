@@ -9,12 +9,12 @@ While there is a custom script contained within this repo to update the backup, 
 
 Graphs:
 
-![Slugcat Frequency](./SlugcatFreq.png)
-
-![Region Frequency](./RegionFreq.png)
-
-![Region Percentage](./RegionCount.png)
-
 ![Spawn Positions](./SpawnPos.png)![Unique Spawn Positions](./UniqSpawnPos.png)
 
 ![Hover Positions](./SpawnPos.png)![Unique Hover Positions](./UniqTargetPos.png)
+
+![Region Percentage](./RegionCount.png)
+
+![Slugcat Frequency](./SlugcatFreq.png)
+
+![Region Frequency](./RegionFreq.png)
