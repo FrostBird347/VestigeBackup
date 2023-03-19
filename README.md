@@ -13,6 +13,8 @@ Graphs:
 
 ![Region Frequency](./RegionFreq.png)
 
+![Region Percentage](./RegionCount.png)
+
 ![Spawn Positions](./SpawnPos.png)![Unique Spawn Positions](./UniqSpawnPos.png)
 
 ![Hover Positions](./SpawnPos.png)![Unique Hover Positions](./UniqTargetPos.png)
