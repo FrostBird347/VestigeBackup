@@ -122,7 +122,7 @@ with open('VestigeBackup.csv','r') as csvfile:
 				hourcurrenttimestring = row[0][0:13]
 				hourrates.append(np.mean(currenthourrate))
 				
-				if np.mean(currenthourrate) < 15:
+				if np.mean(currenthourrate) < 10:
 					print("----")
 					print("Before " + row[0][0:13])
 					print(np.mean(currenthourrate))
