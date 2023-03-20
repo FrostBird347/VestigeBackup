@@ -9,12 +9,18 @@ While there is a custom script contained within this repo to update the backup, 
 
 Graphs:
 
-![Spawn Positions](./SpawnPos.png)![Unique Spawn Positions](./UniqSpawnPos.png)
-
-![Hover Positions](./SpawnPos.png)![Unique Hover Positions](./UniqTargetPos.png)
+<p align="left">
+	<img alt="Spawn Positions" src="./SpawnPos.png" width="49%">
+	<img alt="Unique Spawn Positions" src="./UniqSpawnPos.png" width="49%">
+	<br>
+	<img alt="Hover Positions" src="./TargetPos.png" width="49%">
+	<img alt="Unique Hover Positions" src="./UniqTargetPos.png" width="49%">
+</p>
 
 ![Region Percentage](./RegionCount.svg)
 
 ![Slugcat Frequency](./SlugcatFreq.svg)
 
 ![Region Frequency](./RegionFreq.svg)
+
+![Upload Rate](./HourFreq.svg)
