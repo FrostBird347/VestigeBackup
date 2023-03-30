@@ -23,4 +23,8 @@ Graphs:
 
 ![Region Frequency](./RegionFreq.svg)
 
+![Active Count](./TotalVestiges.svg)
+
+![Active Difference](./VestigeDiff.svg)
+
 ![Upload Rate](./HourFreq.svg)

@@ -306,3 +306,77 @@ ax.set_ylabel('Seconds between an upload')
 plt.savefig('HourFreq.svg', metadata={'Date': None})
 #plt.show()
 plt.close()
+
+
+
+
+
+vestigediff = []
+vestigecount = {
+	"Vestiges": []
+}
+vestigediffrange = [100000000, -100000000]
+
+lastvestigecount = 0
+for i in range(len(timestamps)):
+	vestigecount["Vestiges"].append(lastvestigecount)
+	vestigediff.append(0)
+	for colour in colourcounts:
+		vestigecount["Vestiges"][i] += colourcounts[colour][i]
+		vestigediff[i] += colourcounts[colour][i]
+		if i > 29:
+			vestigecount["Vestiges"][i] -= colourcounts[colour][i - 30]
+			vestigediff[i] -= colourcounts[colour][i - 30]
+	lastvestigecount = vestigecount["Vestiges"][i]
+	if i > 29 and vestigediff[i] < vestigediffrange[0]:
+		vestigediffrange[0] = vestigediff[i]
+	if i > 29 and vestigediff[i] > vestigediffrange[1]:
+		vestigediffrange[1] = vestigediff[i]
+
+fig, ax = plt.subplots()
+plt.minorticks_on()
+
+colours = seaborn.color_palette("tab10")
+ax.set_prop_cycle('color', colours)
+
+ax.stackplot(timestamps, np.vstack(vestigecount.values()), labels=vestigecount.keys())
+
+fig.legend(loc='outside lower center', fontsize='medium', ncol=len(vestigecount.keys()))
+fig.set_figheight(10)
+fig.set_figwidth(20)
+#ax.set_xticks(timestamps)
+ax.set_xlim(left=(0), right=(timestamps[len(timestamps) - 8])) #Don't count the last week
+
+ax.set_title('Active Vestige Count')
+ax.set_xlabel('Days since 26/02/2023 (UCT)')
+ax.set_ylabel('Vestiges')
+
+plt.savefig('TotalVestiges.svg', metadata={'Date': None})
+#plt.show()
+plt.close()
+
+
+
+
+
+fig, ax = plt.subplots()
+plt.minorticks_on()
+
+colours = seaborn.color_palette("tab10")
+ax.set_prop_cycle('color', colours)
+
+ax.plot(timestamps, vestigediff)
+
+fig.set_figheight(10)
+fig.set_figwidth(20)
+#ax.set_xticks(timestamps)
+ax.set_xlim(left=(timestamps[30]), right=(timestamps[len(timestamps) - 8])) #Don't count the last week
+ax.set_ylim(bottom=(vestigediffrange[0] - 100), top=(vestigediffrange[1]  + 100))
+
+ax.set_title('Active Vestige Count Difference')
+ax.set_xlabel('Days since 26/02/2023 (UCT)')
+ax.set_ylabel('Vestiges')
+
+plt.savefig('VestigeDiff.svg', metadata={'Date': None})
+#plt.show()
+plt.close()
