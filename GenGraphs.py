@@ -372,6 +372,7 @@ fig.set_figwidth(20)
 #ax.set_xticks(timestamps)
 ax.set_xlim(left=(timestamps[30]), right=(timestamps[len(timestamps) - 8])) #Don't count the last week
 ax.set_ylim(bottom=(vestigediffrange[0] - 100), top=(vestigediffrange[1]  + 100))
+ax.axhline(linewidth=0.75)
 
 ax.set_title('Active Vestige Count Difference')
 ax.set_xlabel('Days since 26/02/2023 (UCT)')
