@@ -10,6 +10,7 @@ printf "$(cat ./VestigeBackup.csv)\n-----NEXTFILE-----\n$(cat ./LatestDL.csv)" |
 rm ./LatestDL.csv
 cat ./Merged.csv > ./VestigeBackup.csv
 rm ./Merged.csv
+echo "Downloaded: $OldLineCount -> $(wc -l ./VestigeBackup.csv  | awk '{ print $1 }')"
 
 python3 ./GenGraphs.py
 /Applications/ImageOptim.app/Contents/MacOS/ImageOptim ./RegionFreq.svg ./RegionCount.svg ./SpawnPos.png ./TargetPos.png ./UniqSpawnPos.png ./UniqTargetPos.png ./SlugcatFreq.svg ./HourFreq.svg ./TotalVestiges.svg ./VestigeDiff.svg >/dev/null 2>&1
