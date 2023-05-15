@@ -23,6 +23,8 @@ Graphs:
 
 ![Region Frequency](./RegionFreq.svg)
 
+![Visible Count](./VisibleVestiges.svg)
+
 ![Active Count](./TotalVestiges.svg)
 
 ![Active Difference](./VestigeDiff.svg)

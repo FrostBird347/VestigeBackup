@@ -381,3 +381,46 @@ ax.set_ylabel('Vestiges')
 plt.savefig('VestigeDiff.svg', metadata={'Date': None})
 #plt.show()
 plt.close()
+
+
+
+
+
+vestigecount = {
+	"Vestiges": []
+}
+
+lastvestigecount = 0
+for i in range(len(timestamps)):
+	vestigecount["Vestiges"].append(lastvestigecount)
+	for colour in colourcounts:
+		vestigecount["Vestiges"][i] += colourcounts[colour][i]
+		if i > 3:
+			vestigecount["Vestiges"][i] -= colourcounts[colour][i - 4]
+	lastvestigecount = vestigecount["Vestiges"][i]
+	if i > 3 and vestigediff[i] < vestigediffrange[0]:
+		vestigediffrange[0] = vestigediff[i]
+	if i > 3 and vestigediff[i] > vestigediffrange[1]:
+		vestigediffrange[1] = vestigediff[i]
+
+fig, ax = plt.subplots()
+plt.minorticks_on()
+
+colours = seaborn.color_palette("tab10")
+ax.set_prop_cycle('color', colours)
+
+ax.stackplot(timestamps, np.vstack(vestigecount.values()), labels=vestigecount.keys())
+
+fig.legend(loc='outside lower center', fontsize='medium', ncol=len(vestigecount.keys()))
+fig.set_figheight(10)
+fig.set_figwidth(20)
+#ax.set_xticks(timestamps)
+ax.set_xlim(left=(0), right=(timestamps[len(timestamps) - 8])) #Don't count the last week
+
+ax.set_title('Visible Vestige Count (Default Settings)')
+ax.set_xlabel('Days since 26/02/2023 (UCT)')
+ax.set_ylabel('Vestiges')
+
+plt.savefig('VisibleVestiges.svg', metadata={'Date': None})
+#plt.show()
+plt.close()

@@ -13,7 +13,7 @@ rm ./Merged.csv
 echo "Downloaded: $OldLineCount -> $(wc -l ./VestigeBackup.csv  | awk '{ print $1 }')"
 
 python3 ./GenGraphs.py
-/Applications/ImageOptim.app/Contents/MacOS/ImageOptim ./RegionFreq.svg ./RegionCount.svg ./SpawnPos.png ./TargetPos.png ./UniqSpawnPos.png ./UniqTargetPos.png ./SlugcatFreq.svg ./HourFreq.svg ./TotalVestiges.svg ./VestigeDiff.svg >/dev/null 2>&1
+/Applications/ImageOptim.app/Contents/MacOS/ImageOptim ./RegionFreq.svg ./RegionCount.svg ./SpawnPos.png ./TargetPos.png ./UniqSpawnPos.png ./UniqTargetPos.png ./SlugcatFreq.svg ./HourFreq.svg ./TotalVestiges.svg ./VestigeDiff.svg ./VisibleVestiges.svg >/dev/null 2>&1
 
-git add ./VestigeBackup.csv ./RegionFreq.svg ./RegionCount.svg ./SpawnPos.png ./TargetPos.png ./UniqSpawnPos.png ./UniqTargetPos.png ./SlugcatFreq.svg ./HourFreq.svg ./TotalVestiges.svg ./VestigeDiff.svg
+git add ./VestigeBackup.csv ./RegionFreq.svg ./RegionCount.svg ./SpawnPos.png ./TargetPos.png ./UniqSpawnPos.png ./UniqTargetPos.png ./SlugcatFreq.svg ./HourFreq.svg ./TotalVestiges.svg ./VestigeDiff.svg ./VisibleVestiges.svg
 git commit -m "Updated backup: $OldLineCount -> $(wc -l ./VestigeBackup.csv  | awk '{ print $1 }')"
