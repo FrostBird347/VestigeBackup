@@ -193,7 +193,7 @@ plt.minorticks_on()
 colours = seaborn.color_palette(colourpalette, len(regioncounts.keys()))
 ax.set_prop_cycle('color', colours)
 
-ax.pie(regioncounts.values(), labeldistance=None, labels=regioncounts.keys(), radius=(len(regioncounts.keys()) / 24), center=((len(regioncounts.keys()) / 12) + 4, (len(regioncounts.keys()) / 12) + 1))
+ax.pie(regioncounts.values(), labeldistance=None, labels=regioncounts.keys(), radius=(1.25), center=((len(regioncounts.keys()) / 12) + 4, (len(regioncounts.keys()) / 12) + 1))
 
 fig.legend(loc='outside upper left', fontsize='x-small')
 fig.set_figheight(len(regioncounts.keys()) / 6)
