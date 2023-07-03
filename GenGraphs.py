@@ -35,7 +35,13 @@ def getslug(r, g, b):
 		case ["0.09","0.14","0.31"]:
 			return "Inv"
 		case _:
-			return "Custom Colour"
+			return "Custom Colour/Modded"
+
+def getregion(region):
+	if region not in regionkey:
+		return "Modded Region"
+	return regionkey[region]
+
 
 plt.style.use('dark_background')
 
@@ -68,7 +74,7 @@ hourcurrenttimestamp = hourlasttimestamp
 secondslasttemptimestamp = datetime.datetime.strptime('26/02/2023 05:21:28',"%d/%m/%Y %H:%M:%S")
 
 colourcounts = {
-	"Custom Colour": []
+	"Custom Colour/Modded": []
 }
 colourkey = {
 	"Survivor": rgbtohex("1","1","1"),
@@ -80,19 +86,69 @@ colourkey = {
 	"Spearmaster": rgbtohex("0.31","0.18","0.41"),
 	"Saint": rgbtohex("0.66667","0.9451","0.33725"),
 	"Inv": rgbtohex("0.09","0.14","0.31"),
-	"Custom Colour": "#0F0F0F"
+	"Custom Colour/Modded": "#0F0F0F"
 }
+regionkey = {
+	"SU": "Outskirts",
+	"HI": "Industrial Complex",
+	"DS": "Drainage System",
+	"CC": "Chimney Canopy",
+	"GW": "Garbage Wastes",
+	"SH": "Shaded Citadel",
+	"VS": "Pipeyard",
+	"SL": "Shoreline",
+	"SI": "Sky Islands",
+	"LF": "Farm Arrays",
+	"UW": "The Exterior",
+	"SS": "Five Pebbles",
+	"SB": "Subterranean",
+	"OE": "Outer Expanse",
+	"MS": "Submerged Superstructure",
+	"LM": "Waterfront Facility",
+	"LC": "Metropolis",
+	"RM": "The Rot",
+	"UG": "Undergrowth",
+	"HR": "Rubicon",
+	"GATE": "Region Gate"
+}
+regioncolourkey = {
+	"Modded Region": "#0F0F0F",
+	"Outskirts": "#38c79e",
+	"Industrial Complex": "#75ced5",
+	"Drainage System": "#e84dff",
+	"Chimney Canopy": "#c53d0f",
+	"Garbage Wastes": "#8dbd42",
+	"Shaded Citadel": "#515151",
+	"Pipeyard": "#75405c",
+	"Shoreline": "#ede5cc",
+	"Sky Islands": "#ffd0aa",
+	"Farm Arrays": "#608c9e",
+	"The Exterior": "#886b57",
+	"Five Pebbles": "#ffb447",
+	"Subterranean": "#7e4337",
+	"Outer Expanse": "#d8ae8a",
+	"Submerged Superstructure": "#3a808f",
+	"Waterfront Facility": "#7cc2f5",
+	"Metropolis": "#7f3339",
+	"The Rot": "#9c00ff",
+	"Undergrowth": "#8fb572",
+	"Rubicon": "#cd6f00",
+	"Region Gate": "#F0F0F0"
+}
+
+for key in regioncolourkey:
+	print(key)
+	frequencydata[key] = []
+	regioncounts[key] = 0
+	for i in range(currenttime + 1):
+		frequencydata[currentregion].append(0)
 
 with open('VestigeBackup.csv','r') as csvfile:
 	lines = csv.reader(csvfile, delimiter=',')
 	for row in lines:
 		if row[2] != "region":
 			
-			if row[2] not in frequencydata:
-				frequencydata[row[2]] = []
-				regioncounts[row[2]] = 0
-				for i in range(currenttime + 1):
-					frequencydata[row[2]].append(0)
+			currentregion = getregion(row[2])
 			
 			if row[1] not in roomcounts:
 				roomcounts[row[1]] = 0
@@ -143,8 +199,8 @@ with open('VestigeBackup.csv','r') as csvfile:
 				currenthourrate.append(int((secondscurrenttemptimestamp - secondslasttemptimestamp).total_seconds()))
 				secondslasttemptimestamp = secondscurrenttemptimestamp
 			
-			frequencydata[row[2]][currenttime] += 1
-			regioncounts[row[2]] += 1
+			frequencydata[currentregion][currenttime] += 1
+			regioncounts[currentregion] += 1
 			roomcounts[row[1]] += 1
 			colourcounts[currentslug][currenttime] += 1
 			spawnx.append(int(row[6]))
@@ -163,15 +219,15 @@ plt.minorticks_on()
 
 colourpalette = []
 for region in frequencydata:
-	colourpalette.append(ColorHash(region).hex)
+	colourpalette.append(regioncolourkey[region])
 colours = seaborn.color_palette(colourpalette, len(frequencydata.keys()))
 ax.set_prop_cycle('color', colours)
 
 ax.stackplot(timestamps, np.vstack(frequencydata.values()), labels=frequencydata.keys())
 
-fig.legend(loc='outside lower center', fontsize='x-small', ncol=(len(frequencydata.keys()) / 1.5))
+fig.legend(loc='outside lower center', fontsize='x-small', ncol=(20 / 1.5))
 fig.set_figheight(10)
-fig.set_figwidth(len(frequencydata.keys()) / 2.25)
+fig.set_figwidth(40 / 2.25)
 #ax.set_xticks(timestamps)
 ax.set_xlim(left=0, right=(timestamps[len(timestamps) - 8])) #Don't count the last week
 
@@ -193,11 +249,11 @@ plt.minorticks_on()
 colours = seaborn.color_palette(colourpalette, len(regioncounts.keys()))
 ax.set_prop_cycle('color', colours)
 
-ax.pie(regioncounts.values(), labeldistance=None, labels=regioncounts.keys(), radius=(1.25), center=((len(regioncounts.keys()) / 12) + 4, (len(regioncounts.keys()) / 12) + 1))
+ax.pie(regioncounts.values(), labeldistance=None, labels=regioncounts.keys(), radius=(1.25), center=((60 / 12) + 4, (60 / 12) + 1))
 
 fig.legend(loc='outside upper left', fontsize='x-small')
-fig.set_figheight(len(regioncounts.keys()) / 6)
-fig.set_figwidth(1 + len(regioncounts.keys()) / 6)
+fig.set_figheight(60 / 6)
+fig.set_figwidth(1 + 60 / 6)
 
 ax.set_title('Region Frequency', y=1.08)
 
