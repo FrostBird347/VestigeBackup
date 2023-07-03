@@ -35,11 +35,11 @@ def getslug(r, g, b):
 		case ["0.09","0.14","0.31"]:
 			return "Inv"
 		case _:
-			return "Custom Colour/Modded"
+			return "Custom Colour/Modded Campaigns"
 
 def getregion(region):
 	if region not in regionkey:
-		return "Modded Region"
+		return "Modded Regions"
 	return regionkey[region]
 
 
@@ -74,7 +74,7 @@ hourcurrenttimestamp = hourlasttimestamp
 secondslasttemptimestamp = datetime.datetime.strptime('26/02/2023 05:21:28',"%d/%m/%Y %H:%M:%S")
 
 colourcounts = {
-	"Custom Colour/Modded": []
+	"Custom Colour/Modded Campaigns": []
 }
 colourkey = {
 	"Survivor": rgbtohex("1","1","1"),
@@ -86,7 +86,7 @@ colourkey = {
 	"Spearmaster": rgbtohex("0.31","0.18","0.41"),
 	"Saint": rgbtohex("0.66667","0.9451","0.33725"),
 	"Inv": rgbtohex("0.09","0.14","0.31"),
-	"Custom Colour/Modded": "#0F0F0F"
+	"Custom Colour/Modded Campaigns": "#0F0F0F"
 }
 regionkey = {
 	"SU": "Outskirts",
@@ -112,7 +112,7 @@ regionkey = {
 	"GATE": "Region Gate"
 }
 regioncolourkey = {
-	"Modded Region": "#0F0F0F",
+	"Modded Regions": "#0F0F0F",
 	"Outskirts": "#38c79e",
 	"Industrial Complex": "#75ced5",
 	"Drainage System": "#e84dff",
