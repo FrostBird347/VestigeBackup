@@ -4,7 +4,7 @@ const JSDOM = require("jsdom").JSDOM;
 let Plot;
 
 let slugcatColourKey = {
-	"Custom Colour/Modded Campaigns": "#0F0F0F",
+	"Custom Colour/Modded Campaigns": "#00000f",
 	"Survivor": "#ffffff",
 	"Monk": "#ffff73",
 	"Hunter": "#ff7373",
@@ -16,7 +16,7 @@ let slugcatColourKey = {
 	"Inv": "#16234f"
 }
 regionKey = {
-	"MODDED": {name: "Modded Regions", colour: "#0f0f0f"},
+	"MODDED": {name: "Modded Regions", colour: "#00000f"},
 	"SU": {name:"Outskirts", colour: "#38c79e"},
 	"HI": {name:"Industrial Complex", colour: "#75ced5"},
 	"DS": {name:"Drainage System", colour: "#e84dff"},
