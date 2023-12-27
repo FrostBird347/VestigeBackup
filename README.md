@@ -9,24 +9,18 @@ While there is a custom script contained within this repo to update the backup, 
 
 Graphs:
 
-<p align="left">
-	<img alt="Spawn Positions" src="./SpawnPos.png" width="49%">
-	<img alt="Unique Spawn Positions" src="./UniqSpawnPos.png" width="49%">
-	<br>
-	<img alt="Hover Positions" src="./TargetPos.png" width="49%">
-	<img alt="Unique Hover Positions" src="./UniqTargetPos.png" width="49%">
-</p>
+![Slugcat Frequency](./Stats_SlugcatFreq.svg)
 
-![Region Percentage](./RegionCount.svg)
+![Region Frequency](./Stats_RegionFreq.svg)
 
-![Slugcat Frequency](./SlugcatFreq.svg)
+![Active Count](./Stats_ActiveCount.svg)
 
-![Region Frequency](./RegionFreq.svg)
+![Visible Count](./Stats_VisibleCount.svg)
 
-![Visible Count](./VisibleVestiges.svg)
+![Total Count (within this repo)](./Stats_TotalCount.svg)
 
-![Active Count](./TotalVestiges.svg)
+![Spawn Position](./Stats_SpawnPos.svg)
 
-![Active Difference](./VestigeDiff.svg)
+![Hover Position](./Stats_TargetPos.svg)
 
-![Upload Rate](./HourFreq.svg)
+![Travel Distance](./Stats_TravelDist.svg)
