@@ -334,7 +334,7 @@ function realStart() {
 		style: {color: "dodgerblue"},
 		document: (new JSDOM(`...`)).window.document
 	});
-	travelDistHeat.innerHTML += `<mask xmlns="http://www.w3.org/2000/svg" id="Mask"><rect x="45" y="15" width="950" height="750" fill="white"/></mask>`;
+	travelDistHeat.innerHTML += `<mask xmlns="http://www.w3.org/2000/svg" id="Mask"><rect x="45" y="15" width="950" height="780" fill="white"/></mask>`;
 	travelDistHeat.children[9].setAttribute("mask", "url(#Mask)");
 	saveGraph(travelDistHeat, "TravelDist");
 	
