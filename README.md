@@ -7,7 +7,7 @@ While there is a custom script contained within this repo to update the backup, 
 
 ----
 
-Graphs:
+## Graphs
 
 Slugcat Frequency:
 
