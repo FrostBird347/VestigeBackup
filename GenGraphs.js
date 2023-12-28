@@ -280,7 +280,7 @@ function realStart() {
 	
 	
 	let visibleCountGraph = Plot.line(datasets.counters, {x: "time", y: "visibleCount", type: "utc", domain: [parseDate(vestiges[1][0]).valueOf(), parseDate(vestiges[vestiges.length - 1][0]).valueOf()]}).plot({
-		y: {grid: true, label: "Visible Vestiges (Default settings)"},
+		y: {grid: true, label: "Visible Vestiges (4 days)"},
 		margin: 60,
 		width: 830,
 		style: {color: "dodgerblue"},
@@ -290,7 +290,7 @@ function realStart() {
 	
 	
 	let totalCountGraph = Plot.line(datasets.counters, {x: "time", y: "totalCount", type: "utc", domain: [parseDate(vestiges[1][0]).valueOf(), parseDate(vestiges[vestiges.length - 1][0]).valueOf()]}).plot({
-		y: {grid: true, label: "Total Vestiges (∞ Lifespan)"},
+		y: {grid: true, label: "Total Vestiges"},
 		margin: 60,
 		width: 830,
 		style: {color: "dodgerblue"},
