@@ -14,6 +14,17 @@ echo "Downloaded: $OldLineCount -> $(wc -l ./VestigeBackup.csv  | awk '{ print $
 
 node ./GenGraphs.js
 /Applications/ImageOptim.app/Contents/MacOS/ImageOptim ./Stats_ActiveCount.svg ./Stats_RegionFreq.svg ./Stats_SlugcatFreq.svg ./Stats_SpawnPos.svg ./Stats_TargetPos.svg ./Stats_TotalCount.svg ./Stats_TravelDist.svg ./Stats_VisibleCount.svg >/dev/null 2>&1
+# for come reason adding whitespace and running it a second time gives more compression improvements (the third one is just to be extra sure the output is always the same)
+for svg in ./Stats_ActiveCount.svg ./Stats_RegionFreq.svg ./Stats_SlugcatFreq.svg ./Stats_SpawnPos.svg ./Stats_TargetPos.svg ./Stats_TotalCount.svg ./Stats_TravelDist.svg ./Stats_VisibleCount.svg
+do
+	echo " " >> "$svg"
+done
+/Applications/ImageOptim.app/Contents/MacOS/ImageOptim ./Stats_ActiveCount.svg ./Stats_RegionFreq.svg ./Stats_SlugcatFreq.svg ./Stats_SpawnPos.svg ./Stats_TargetPos.svg ./Stats_TotalCount.svg ./Stats_TravelDist.svg ./Stats_VisibleCount.svg >/dev/null 2>&1
+for svg in ./Stats_ActiveCount.svg ./Stats_RegionFreq.svg ./Stats_SlugcatFreq.svg ./Stats_SpawnPos.svg ./Stats_TargetPos.svg ./Stats_TotalCount.svg ./Stats_TravelDist.svg ./Stats_VisibleCount.svg
+do
+	echo " " >> "$svg"
+done
+/Applications/ImageOptim.app/Contents/MacOS/ImageOptim ./Stats_ActiveCount.svg ./Stats_RegionFreq.svg ./Stats_SlugcatFreq.svg ./Stats_SpawnPos.svg ./Stats_TargetPos.svg ./Stats_TotalCount.svg ./Stats_TravelDist.svg ./Stats_VisibleCount.svg >/dev/null 2>&1
 
 git add ./VestigeBackup.csv ./Stats_ActiveCount.svg ./Stats_RegionFreq.svg ./Stats_SlugcatFreq.svg ./Stats_SpawnPos.svg ./Stats_TargetPos.svg ./Stats_TotalCount.svg ./Stats_TravelDist.svg ./Stats_VisibleCount.svg
 git commit -m "Updated backup: $OldLineCount -> $(wc -l ./VestigeBackup.csv  | awk '{ print $1 }')"
