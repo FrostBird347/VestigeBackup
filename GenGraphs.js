@@ -325,10 +325,10 @@ function realStart() {
 	saveGraph(targetPosHeat, "TargetPos");
 	
 	
-	let travelDistHeat = Plot.rect(datasets.vestigeList, Plot.bin({fill: "count"}, {x: "travelDistX", y: "travelDistY", thresholds: 4000, inset: 0})).plot({
+	let travelDistHeat = Plot.rect(datasets.vestigeList, Plot.bin({fill: "count"}, {x: "travelDistX", y: "travelDistY", thresholds: 4500, inset: 0})).plot({
 		color: {scheme: "Inferno", type: "log"},
-		x: {domain: [-100, 100], round: true, grid: true},
-		y: {domain: [-100, 100], round: true, grid: true},
+		x: {domain: [-150, 150], round: true, grid: true, reverse: true},
+		y: {domain: [-140, 160], round: true, grid: true, reverse: true},
 		width: 830,
 		height: 830,
 		style: {color: "dodgerblue", backgroundColor: "black"},
