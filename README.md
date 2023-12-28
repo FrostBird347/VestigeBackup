@@ -13,9 +13,13 @@ Slugcat Frequency:
 
 ![Slugcat Frequency](./Stats_SlugcatFreq.svg)
 
+![Slugcat Frequency (%)](./Stats_SlugcatPercent.svg)
+
 Region Frequency:
 
 ![Region Frequency](./Stats_RegionFreq.svg)
+
+![Region Frequency (%)](./Stats_RegionPercent.svg)
 
 Vestige Count (Max lifespan):
 

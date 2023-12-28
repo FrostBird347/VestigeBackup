@@ -269,6 +269,52 @@ function realStart() {
 	saveGraph(slugcatFreqGraph, "SlugcatFreq");
 	
 	
+	let regionPercentGraph = Plot.plot({
+		y: {grid: true, tickFormat: "%"},
+		margin: 60,
+		width: 830,
+		color: {
+			domain: regionNameList,
+			range: regionColourList,
+			legend: false
+		},
+		marks: [
+			Plot.rectY(datasets.vestigeList, Plot.binX({y: "count"}, {offset: "normalize", type: "utc", order: regionNameList, domain: [parseDate(vestiges[1][0]).valueOf(), parseDate(vestiges[vestiges.length - 1][0]).valueOf()], x: "timestamp", fill: "regionName"})),
+			Plot.ruleY([0])
+		],
+		style: {color: "dodgerblue"},
+		document: (new JSDOM(`...`)).window.document
+	})
+	//Manually add hardcoded legend before saving because enabling the legend option above turns the output into a html file
+	regionPercentGraph.innerHTML += fs.readFileSync('./Stats_RegionFreqL.svg');
+	regionPercentGraph.setAttribute("height", 470 + 94);
+	regionPercentGraph.setAttribute("viewBox", regionPercentGraph.getAttribute("viewBox").replaceAll("470", (470 + 94)));
+	saveGraph(regionPercentGraph, "RegionPercent");
+	
+	
+	let slugcatPercentGraph = Plot.plot({
+		y: {grid: true, tickFormat: "%"},
+		margin: 60,
+		width: 830,
+		color: {
+			domain: slugcatNameList,
+			range: slugcatColourList,
+			legend: false
+		},
+		marks: [
+			Plot.rectY(datasets.vestigeList, Plot.binX({y: "count"}, {offset: "normalize", type: "utc", order: slugcatNameList, domain: [parseDate(vestiges[1][0]).valueOf(), parseDate(vestiges[vestiges.length - 1][0]).valueOf()], x: "timestamp", fill: "slugcat"})),
+			Plot.ruleY([0])
+		],
+		style: {color: "dodgerblue"},
+		document: (new JSDOM(`...`)).window.document
+	})
+	//Manually add hardcoded legend before saving because enabling the legend option above turns the output into a html file
+	slugcatPercentGraph.innerHTML += fs.readFileSync('./Stats_SlugcatFreqL.svg');
+	slugcatPercentGraph.setAttribute("height", 470 + 94);
+	slugcatPercentGraph.setAttribute("viewBox", slugcatPercentGraph.getAttribute("viewBox").replaceAll("470", (470 + 94)));
+	saveGraph(slugcatPercentGraph, "SlugcatPercent");
+	
+	
 	let activeCountGraph = Plot.line(datasets.counters, {x: "time", y: "activeCount", type: "utc", domain: [parseDate(vestiges[1][0]).valueOf(), parseDate(vestiges[vestiges.length - 1][0]).valueOf()]}).plot({
 		y: {grid: true, label: "Visible Vestiges (30 days)"},
 		margin: 60,
