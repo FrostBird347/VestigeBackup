@@ -358,7 +358,7 @@ function realStart() {
 	saveGraph(spawnPosHeat, "SpawnPos");
 	
 	
-	let targetPosHeat = Plot.rect(datasets.vestigeList, Plot.bin({fill: "count"}, {x: "targetPosX", y: "targetPosY", thresholds: 90, inset: 0})).plot({
+	let targetPosHeat = Plot.rect(datasets.vestigeList, Plot.bin({fill: "count"}, {x: "targetPosX", y: "targetPosY", thresholds: 900, inset: 0})).plot({
 		color: {scheme: "Turbo"},
 		x: {domain: [-50, 300], round: true, grid: true},
 		y: {domain: [-40, 230], round: true, grid: true},
