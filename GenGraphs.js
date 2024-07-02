@@ -357,6 +357,48 @@ function realStart() {
 	spawnPosHeat.children[9].setAttribute("mask", "url(#Mask)");
 	saveGraph(spawnPosHeat, "SpawnPos");
 	
+	/*
+	I hope there is a proper way to do this, but for now I just replaced the function in "node_modules/d3-scale-chromatic/src/sequential-multi/turbo.js" with:
+		export default function(t) {
+		  t = Math.max(0, Math.min(1, t));
+		  return "rgba("
+		      + Math.max(0, Math.min(255, Math.round(34.61 + t * (1172.33 - t * (10793.56 - t * (33300.12 - t * (38394.49 - t * 14825.05))))))) + ", "
+		      + Math.max(0, Math.min(255, Math.round(23.31 + t * (557.33 + t * (1225.33 - t * (3574.96 - t * (1073.77 + t * 707.56))))))) + ", "
+		      + Math.max(0, Math.min(255, Math.round(27.2 + t * (3211.1 - t * (15327.97 - t * (27814 - t * (22569.18 - t * 6838.66))))))) + ", "
+		      + Math.max(0, Math.min(255, t * 5 * 255 )) + ")";
+		}
+	
+	Note that this is just a small edit of https://github.com/d3/d3-scale-chromatic/blob/2c52792197299346b7bdb94322bb4dff8f554fea/src/sequential-multi/turbo.js to add transparency for very low values
+	A copy of the license from d3-scale-chromatic has been provided below and applies to the commented out function above:
+		Copyright 2010-2024 Mike Bostock
+		
+		Permission to use, copy, modify, and/or distribute this software for any purpose
+		with or without fee is hereby granted, provided that the above copyright notice
+		and this permission notice appear in all copies.
+		
+		THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+		REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
+		FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+		INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS
+		OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+		TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+		THIS SOFTWARE.
+		
+		Apache-Style Software License for ColorBrewer software and ColorBrewer Color Schemes
+		
+		Copyright 2002 Cynthia Brewer, Mark Harrower, and The Pennsylvania State University
+		
+		Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+		this file except in compliance with the License. You may obtain a copy of the
+		License at
+		
+		http://www.apache.org/licenses/LICENSE-2.0
+		
+		Unless required by applicable law or agreed to in writing, software distributed
+		under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+		CONDITIONS OF ANY KIND, either express or implied. See the License for the
+		specific language governing permissions and limitations under the License.
+	*/
 	
 	let targetPosHeat = Plot.rect(datasets.vestigeList, Plot.bin({fill: "count"}, {x: "targetPosX", y: "targetPosY", thresholds: 900, inset: 0})).plot({
 		color: {scheme: "Turbo"},
