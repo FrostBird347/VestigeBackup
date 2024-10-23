@@ -5,7 +5,7 @@ DownloadID="$(cat ./DownloadID)"
 wget "https://docs.google.com/spreadsheet/ccc?key=$DownloadID&output=csv" -O "./LatestDL.csv" --no-verbose
 
 OldLineCount="$(wc -l ./VestigeBackup.csv  | awk '{ print $1 }')"
-printf "$(cat ./VestigeBackup.csv)\n-----NEXTFILE-----\n$(cat ./LatestDL.csv)" | jsc ./Merge.js > ./Merged.csv
+node ./Merge.js
 
 rm ./LatestDL.csv
 cat ./Merged.csv > ./VestigeBackup.csv

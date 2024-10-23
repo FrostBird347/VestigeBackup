@@ -1,38 +1,31 @@
-function MergeCSV(OldCSV, NewCSV) {
-	let FinalCSV = OldCSV.join("\n");
-	let ReachedNewData = false;
+const fs = require('fs');
+const readline = require('readline');
+
+async function MergeCSV() {
+	let newData = fs.readFileSync('./LatestDL.csv', "utf8").split("\r\n");
+	let i_nD = 1;
 	
-	for (let i = 4; i < NewCSV.length; i++) {
-		if (ReachedNewData || (
-		  NewCSV[i - 4] == OldCSV[OldCSV.length - 4] &&
-		  NewCSV[i - 3] == OldCSV[OldCSV.length - 3] &&
-		  NewCSV[i - 2] == OldCSV[OldCSV.length - 2] &&
-		  NewCSV[i - 1] == OldCSV[OldCSV.length - 1])) {
-			ReachedNewData = true;
-			FinalCSV += "\n" + NewCSV[i];
+	const output = fs.createWriteStream('./Merged.csv');
+	
+	const oldData = readline.createInterface({
+		input: fs.createReadStream('VestigeBackup.csv'),
+		crlfDelay: Infinity
+	});
+	
+	for await (const line of oldData) {
+		if (i_nD < newData.length && line == newData[i_nD]) {
+			i_nD++;
+		}
+		
+		if (line != "") {
+			output.write(line + "\n");
 		}
 	}
 	
-	print(FinalCSV);
-}
-
-function ReadInput() {
-	let CSVFiles = [decodeURIComponent(escape(readline())), ""];
-	let FileIndex = 0;
-	let CurrentLine = decodeURIComponent(escape(readline()));
-	
-	while (CurrentLine != "") {
-		if (CurrentLine == "-----NEXTFILE-----") {
-			FileIndex = 1;
-			CurrentLine = decodeURIComponent(escape(readline()));
-		} else {
-			CSVFiles[FileIndex] += "\n" + CurrentLine;
-			CurrentLine = decodeURIComponent(escape(readline()));
-		}
+	while (i_nD < newData.length) {
+		output.write(newData[i_nD] + "\n");
+		i_nD++;
 	}
-	
-	return CSVFiles;
 }
 
-RawFiles = ReadInput();
-MergeCSV(RawFiles[0].split(/\r?\n/), RawFiles[1].split(/\r?\n/));
+MergeCSV();
