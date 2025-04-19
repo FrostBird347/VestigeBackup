@@ -8,6 +8,7 @@ let slugcatColourKey = {
 	"Survivor": "#ffffff",
 	"Monk": "#ffff73",
 	"Hunter": "#ff7373",
+	"Watcher": "#17234f",
 	"Gourmand": "#f0c097",
 	"Artificer": "#70223b",
 	"Rivulet": "#91ccf0",
@@ -72,6 +73,7 @@ let datasets = {
 		{name: "Survivor", count: 0},
 		{name: "Monk", count: 0},
 		{name: "Hunter", count: 0},
+		{name: "Watcher", count: 0},
 		{name: "Gourmand", count: 0},
 		{name: "Artificer", count: 0},
 		{name: "Rivulet", count: 0},
@@ -126,6 +128,8 @@ function getSlugcat(r, g, b) {
 			return "Saint"
 		case "0.09,0.14,0.31":
 			return "Inv"
+		case "0.09200001,0.1388,0.308":
+			return "Watcher"
 		default:
 			return "Custom Colour/Modded Campaigns"
 	}
