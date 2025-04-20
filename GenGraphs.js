@@ -169,11 +169,11 @@ function realStart() {
 		newVestige.rawColour = [vestiges[i][3], vestiges[i][4], vestiges[i][5]];
 		newVestige.slugcat = getSlugcat(vestiges[i][3], vestiges[i][4], vestiges[i][5]);
 		newVestige.spawnPos = [vestiges[i][6], vestiges[i][7]];
-		newVestige.spawnPosX = parseInt(vestiges[i][6]);
-		newVestige.spawnPosY = parseInt(vestiges[i][7]);
+		newVestige.spawnPosX = Math.max(Math.min(parseInt(vestiges[i][6]), 1000), -1000);
+		newVestige.spawnPosY = Math.max(Math.min(parseInt(vestiges[i][7]), 1000), -1000);
 		newVestige.targetPos = [vestiges[i][8], vestiges[i][9]];
-		newVestige.targetPosX = parseInt(vestiges[i][8]);
-		newVestige.targetPosY = parseInt(vestiges[i][9]);
+		newVestige.targetPosX = Math.max(Math.min(parseInt(vestiges[i][8]), 1000), -1000);
+		newVestige.targetPosY = Math.max(Math.min(parseInt(vestiges[i][9]), 1000), -1000);
 		newVestige.travelDistX = newVestige.targetPosX - newVestige.spawnPosX;
 		newVestige.travelDistY = newVestige.targetPosY - newVestige.spawnPosY;
 		
@@ -349,7 +349,7 @@ function realStart() {
 	saveGraph(totalCountGraph, "TotalCount");
 	
 	
-	let spawnPosHeat = Plot.rect(datasets.vestigeList, Plot.bin({fill: "count"}, {x: "spawnPosX", y: "spawnPosY", thresholds: 2000, inset: 0})).plot({
+	let spawnPosHeat = Plot.rect(datasets.vestigeList, Plot.bin({fill: "count"}, {x: "spawnPosX", y: "spawnPosY", thresholds: 1000, inset: 0})).plot({
 		color: {scheme: "Turbo"},
 		x: {domain: [-50, 300], round: true, grid: true},
 		y: {domain: [-40, 230], round: true, grid: true},
@@ -417,7 +417,7 @@ function realStart() {
 	saveGraph(targetPosHeat, "TargetPos");
 	
 	
-	let travelDistHeat = Plot.rect(datasets.vestigeList, Plot.bin({fill: "count"}, {x: "travelDistX", y: "travelDistY", thresholds: 4500, inset: 0})).plot({
+	let travelDistHeat = Plot.rect(datasets.vestigeList, Plot.bin({fill: "count"}, {x: "travelDistX", y: "travelDistY", thresholds: 1000, inset: 0})).plot({
 		color: {scheme: "Inferno", type: "log"},
 		x: {domain: [-150, 150], round: true, grid: true, reverse: true},
 		y: {domain: [-140, 160], round: true, grid: true, reverse: true},
