@@ -312,7 +312,7 @@
     <rect x="746.432" y="405.172" width="5.017" height=".235" fill="#e84dff"/>
     <rect x="752.449" y="402.758" width="5.017" height=".771" fill="#e84dff"/>
     <rect x="758.466" y="401.92" width="5.017" height=".453" fill="#e84dff"/>
-    <rect x="764.483" y="408.709" width="5.017" height=".017" fill="#e84dff"/>
+    <rect x="764.483" y="408.676" width="5.017" height=".017" fill="#e84dff"/>
     <rect x="60.5" y="210.022" width="5.017" height="13.311" fill="#608c9e"/>
     <rect x="66.517" y="210.977" width="5.017" height="13.327" fill="#608c9e"/>
     <rect x="72.534" y="230.708" width="5.017" height="13.478" fill="#608c9e"/>
@@ -779,7 +779,7 @@
     <rect x="746.432" y="405.407" width="5.017" height=".956" fill="#75ced5"/>
     <rect x="752.449" y="403.529" width="5.017" height="2.716" fill="#75ced5"/>
     <rect x="758.466" y="402.372" width="5.017" height="2.112" fill="#75ced5"/>
-    <rect x="764.483" y="408.726" width="5.017" height=".486" fill="#75ced5"/>
+    <rect x="764.483" y="408.692" width="5.017" height=".486" fill="#75ced5"/>
     <rect x="60.5" y="133.192" width="5.017" height="12.389" fill="#7f3339"/>
     <rect x="66.517" y="132.706" width="5.017" height="12.623" fill="#7f3339"/>
     <rect x="72.534" y="162.026" width="5.017" height="13.545" fill="#7f3339"/>
@@ -895,7 +895,7 @@
     <rect x="746.432" y="400.998" width="5.017" height=".235" fill="#7f3339"/>
     <rect x="752.449" y="393.471" width="5.017" height=".52" fill="#7f3339"/>
     <rect x="758.466" y="394.476" width="5.017" height=".486" fill="#7f3339"/>
-    <rect x="764.483" y="408.122" width="5.017" height=".117" fill="#7f3339"/>
+    <rect x="764.483" y="408.089" width="5.017" height=".117" fill="#7f3339"/>
     <rect x="60.5" y="400.746" width="5.017" height="9.254" fill="#00000f"/>
     <rect x="66.517" y="405.055" width="5.017" height="4.945" fill="#00000f"/>
     <rect x="72.534" y="403.931" width="5.017" height="6.069" fill="#00000f"/>
@@ -1013,7 +1013,7 @@
     <rect x="746.432" y="407.251" width="5.017" height="2.749" fill="#00000f"/>
     <rect x="752.449" y="407.972" width="5.017" height="2.028" fill="#00000f"/>
     <rect x="758.466" y="407.351" width="5.017" height="2.649" fill="#00000f"/>
-    <rect x="764.483" y="409.396" width="5.017" height=".604" fill="#00000f"/>
+    <rect x="764.483" y="409.363" width="5.017" height=".637" fill="#00000f"/>
     <rect x="60.5" y="152.873" width="5.017" height="4.912" fill="#d8ae8a"/>
     <rect x="66.517" y="155.019" width="5.017" height="3.856" fill="#d8ae8a"/>
     <rect x="72.534" y="183.534" width="5.017" height="4.157" fill="#d8ae8a"/>
@@ -1126,7 +1126,7 @@
     <rect x="740.415" y="398.818" width="5.017" height=".184" fill="#d8ae8a"/>
     <rect x="746.432" y="401.534" width="5.017" height=".302" fill="#d8ae8a"/>
     <rect x="758.466" y="395.616" width="5.017" height=".369" fill="#d8ae8a"/>
-    <rect x="764.483" y="408.307" width="5.017" height=".067" fill="#d8ae8a"/>
+    <rect x="764.483" y="408.273" width="5.017" height=".067" fill="#d8ae8a"/>
     <rect x="60.5" y="367.771" width="5.017" height="32.975" fill="#38c79e"/>
     <rect x="66.517" y="372.968" width="5.017" height="32.086" fill="#38c79e"/>
     <rect x="72.534" y="374.494" width="5.017" height="29.438" fill="#38c79e"/>
@@ -1244,7 +1244,7 @@
     <rect x="746.432" y="406.362" width="5.017" height=".888" fill="#38c79e"/>
     <rect x="752.449" y="406.245" width="5.017" height="1.727" fill="#38c79e"/>
     <rect x="758.466" y="404.485" width="5.017" height="2.867" fill="#38c79e"/>
-    <rect x="764.483" y="409.212" width="5.017" height=".184" fill="#38c79e"/>
+    <rect x="764.483" y="409.179" width="5.017" height=".184" fill="#38c79e"/>
     <rect x="60.5" y="257.246" width="5.017" height="6.555" fill="#75405c"/>
     <rect x="66.517" y="263.918" width="5.017" height="8.818" fill="#75405c"/>
     <rect x="72.534" y="274.312" width="5.017" height="5.147" fill="#75405c"/>
@@ -1696,7 +1696,7 @@
     <rect x="746.432" y="403.294" width="5.017" height=".084" fill="#515151"/>
     <rect x="752.449" y="398.869" width="5.017" height=".671" fill="#515151"/>
     <rect x="758.466" y="399.288" width="5.017" height=".687" fill="#515151"/>
-    <rect x="764.483" y="408.642" width="5.017" height=".067" fill="#515151"/>
+    <rect x="764.483" y="408.609" width="5.017" height=".067" fill="#515151"/>
     <rect x="60.5" y="247.322" width="5.017" height="9.924" fill="#ede5cc"/>
     <rect x="66.517" y="256.475" width="5.017" height="7.443" fill="#ede5cc"/>
     <rect x="72.534" y="268.059" width="5.017" height="6.253" fill="#ede5cc"/>
@@ -1931,7 +1931,7 @@
     <rect x="746.432" y="402.557" width="5.017" height=".57" fill="#ffd0aa"/>
     <rect x="752.449" y="397.662" width="5.017" height=".235" fill="#ffd0aa"/>
     <rect x="758.466" y="398.349" width="5.017" height=".469" fill="#ffd0aa"/>
-    <rect x="764.483" y="408.424" width="5.017" height=".218" fill="#ffd0aa"/>
+    <rect x="764.483" y="408.391" width="5.017" height=".218" fill="#ffd0aa"/>
     <rect x="60.5" y="151.666" width="5.017" height="1.207" fill="#3a808f"/>
     <rect x="66.517" y="154.382" width="5.017" height=".637" fill="#3a808f"/>
     <rect x="72.534" y="182.663" width="5.017" height=".872" fill="#3a808f"/>
@@ -2160,7 +2160,7 @@
     <rect x="746.432" y="401.836" width="5.017" height=".168" fill="#7e4337"/>
     <rect x="752.449" y="394.359" width="5.017" height=".888" fill="#7e4337"/>
     <rect x="758.466" y="395.985" width="5.017" height=".872" fill="#7e4337"/>
-    <rect x="764.483" y="408.374" width="5.017" height=".05" fill="#7e4337"/>
+    <rect x="764.483" y="408.34" width="5.017" height=".05" fill="#7e4337"/>
     <rect x="60.5" y="176.192" width="5.017" height="33.83" fill="#886b57"/>
     <rect x="66.517" y="172.587" width="5.017" height="38.39" fill="#886b57"/>
     <rect x="72.534" y="200.365" width="5.017" height="30.343" fill="#886b57"/>
@@ -2608,7 +2608,7 @@
     <rect x="746.432" y="401.232" width="5.017" height=".05" fill="#7cc2f5"/>
     <rect x="752.449" y="393.99" width="5.017" height=".369" fill="#7cc2f5"/>
     <rect x="758.466" y="394.963" width="5.017" height=".453" fill="#7cc2f5"/>
-    <rect x="764.483" y="408.24" width="5.017" height=".067" fill="#7cc2f5"/>
+    <rect x="764.483" y="408.206" width="5.017" height=".067" fill="#7cc2f5"/>
   </g>
   <g aria-label="rule" stroke="currentColor">
     <line x1="60" x2="770" y1="410" y2="410"/>
