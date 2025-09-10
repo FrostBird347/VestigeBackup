@@ -36,6 +36,14 @@ do
 	cat "$svg" | xmllint --format - > _temp.svg
 	cat _temp.svg > "$svg"
 done
+#Split the line paths to further save space
+for svg in ./Stats_ActiveCount.svg ./Stats_TotalCount.svg ./Stats_VisibleCount.svg
+do
+	#Head doesn't support negative numbers on my system
+	cat "$svg" | head -n "$(( $(wc -l "$svg" | awk '{print $1}') - 4 ))" > _temp.svg
+	cat "$svg" | tail -n 4 | awk -F'\,' '{$1=$1}1' OFS='\,\n' >> _temp.svg
+	cat _temp.svg > "$svg"
+done
 rm _temp.svg
 echo "Fixed formatting for git"
 
