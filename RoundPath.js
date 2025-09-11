@@ -8,10 +8,9 @@ const rl = readline.createInterface({
 
 rl.on('line', (line) => {
 	//Shouldn't go over 16, but im checking if it's below 20 to be safe
-	let splitLine;
-	if (line.length < 20 && (splitLine = line.split("L")) && splitLine.length == 2 && splitLine[1].endsWith(",")) {
-		let output = (Math.round(parseFloat(splitLine[0]) * 100) / 100) + "L";
-		output += (Math.round(parseFloat(splitLine[1].trimEnd(',')) * 100) / 100) + ",";
+	if (line.length < 20 && (line.endsWith(',') || line.endsWith('L')) && !isNaN(parseFloat(line.trimEnd('L').trimEnd(',')))) {
+		let type = line.endsWith(',') ? "," : "L";
+		let output = (Math.round(parseFloat(line.trimEnd(type)) * 100) / 100).toFixed(2) + type;
 		console.log(output);
 	} else {
 		console.log(line);
