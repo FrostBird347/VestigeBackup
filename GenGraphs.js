@@ -18,6 +18,7 @@ let slugcatColourKey = {
 }
 regionKey = {
 	"MODDED": {name: "Modded Regions", colour: "#00000f"},
+	"WATCHER": {name: "Watcher Regions", colour: "#17234f"},
 	"SU": {name:"Outskirts", colour: "#38c79e"},
 	"HI": {name:"Industrial Complex", colour: "#75ced5"},
 	"DS": {name:"Drainage System", colour: "#e84dff"},
@@ -46,6 +47,7 @@ let datasets = {
 	vestigeListOnlyModdedSlugcats: [],
 	regionCounts: [
 		{id: "MODDED", count: 0},
+		{id: "WATCHER", count: 0},
 		{id: "SU", count: 0},
 		{id: "HI", count: 0},
 		{id: "DS", count: 0},
@@ -179,8 +181,41 @@ function realStart() {
 		
 		newVestige.timestamp = parseDate(newVestige.rawTimestamp);
 		
-		if (regionKey[newVestige.regionId] == undefined) {
-			newVestige.regionId = "MODDED";
+		switch(newVestige.regionId) {
+			case "WARA":
+			case "WARB":
+			case "WARC":
+			case "WARD":
+			case "WARE":
+			case "WARF":
+			case "WARG":
+			case "WAUA":
+			case "WBLA":
+			case "WDSR":
+			case "WGWR":
+			case "WHIR":
+			case "WORA":
+			case "WPTA":
+			case "WRFA":
+			case "WRFB":
+			case "WRRA":
+			case "WRSA":
+			case "WSKA":
+			case "WSKB":
+			case "WSKC":
+			case "WSKD":
+			case "WSSR":
+			case "WSUR":
+			case "WTDA":
+			case "WTDB":
+			case "WVWA":
+				newVestige.regionId = "WATCHER";
+				break;
+			default:
+				if (regionKey[newVestige.regionId] == undefined) {
+					newVestige.regionId = "MODDED";
+				}
+				break;
 		}
 		newVestige.regionName = regionKey[newVestige.regionId].name;
 		
