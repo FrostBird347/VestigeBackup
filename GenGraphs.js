@@ -181,41 +181,11 @@ function realStart() {
 		
 		newVestige.timestamp = parseDate(newVestige.rawTimestamp);
 		
-		switch(newVestige.regionId) {
-			case "WARA":
-			case "WARB":
-			case "WARC":
-			case "WARD":
-			case "WARE":
-			case "WARF":
-			case "WARG":
-			case "WAUA":
-			case "WBLA":
-			case "WDSR":
-			case "WGWR":
-			case "WHIR":
-			case "WORA":
-			case "WPTA":
-			case "WRFA":
-			case "WRFB":
-			case "WRRA":
-			case "WRSA":
-			case "WSKA":
-			case "WSKB":
-			case "WSKC":
-			case "WSKD":
-			case "WSSR":
-			case "WSUR":
-			case "WTDA":
-			case "WTDB":
-			case "WVWA":
-				newVestige.regionId = "WATCHER";
-				break;
-			default:
-				if (regionKey[newVestige.regionId] == undefined) {
-					newVestige.regionId = "MODDED";
-				}
-				break;
+		let watcherRegions = ["WARA", "WARB", "WARC", "WARD", "WARE", "WARF", "WARG", "WAUA", "WBLA", "WDSR", "WGWR", "WHIR", "WORA", "WPTA", "WRFA", "WRFB", "WRRA", "WRSA", "WSKA", "WSKB", "WSKC", "WSKD", "WSSR", "WSUR", "WTDA", "WTDB", "WVWA"];
+		if (watcherRegions.includes(newVestige.regionId)) {
+			newVestige.regionId = "WATCHER";
+		} else if (regionKey[newVestige.regionId] == undefined) {
+			newVestige.regionId = "MODDED";
 		}
 		newVestige.regionName = regionKey[newVestige.regionId].name;
 		
