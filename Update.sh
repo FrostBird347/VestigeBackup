@@ -18,7 +18,7 @@ echo "Compressing..."
 ./node_modules/.bin/svgo --pretty --multipass ./Stats_ActiveCount.svg ./Stats_RegionFreq.svg ./Stats_RegionPercent.svg ./Stats_SlugcatFreq.svg ./Stats_SlugcatPercent.svg ./Stats_SpawnPos.svg ./Stats_TargetPos.svg ./Stats_TotalCount.svg ./Stats_TravelDist.svg ./Stats_VisibleCount.svg
 
 #Split the line paths to further save space
-for svg in ./Stats_ActiveCount.svg ./Stats_TotalCount.svg ./Stats_VisibleCount.svg
+for svg in ./Stats_ActiveCount.svg ./Stats_RegionFreq.svg ./Stats_RegionPercent.svg ./Stats_SlugcatFreq.svg ./Stats_SlugcatPercent.svg ./Stats_SpawnPos.svg ./Stats_TargetPos.svg ./Stats_TotalCount.svg ./Stats_TravelDist.svg ./Stats_VisibleCount.svg
 do
 	cat "$svg" | node SpreadPath.js > _temp.svg
 	cat _temp.svg > "$svg"
