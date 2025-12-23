@@ -10,7 +10,8 @@ node ./Merge.js
 rm ./LatestDL.csv
 cat ./Merged.csv > ./VestigeBackup.csv
 rm ./Merged.csv
-echo "Downloaded: $OldLineCount -> $(wc -l ./VestigeBackup.csv  | awk '{ print $1 }')"
+NewLineCount="$(wc -l ./VestigeBackup.csv  | awk '{ print $1 }')"
+echo "Downloaded: $OldLineCount -> $NewLineCount"
 
 node ./GenGraphs.js
 
@@ -27,4 +28,6 @@ rm _temp.svg
 echo "Fixed formatting for git"
 
 git add ./VestigeBackup.csv ./Stats_ActiveCount.svg ./Stats_RegionFreq.svg ./Stats_RegionPercent.svg ./Stats_SlugcatFreq.svg ./Stats_SlugcatPercent.svg ./Stats_SpawnPos.svg ./Stats_TargetPos.svg ./Stats_TotalCount.svg ./Stats_TravelDist.svg ./Stats_VisibleCount.svg
-git commit -m "Updated backup: $OldLineCount -> $(wc -l ./VestigeBackup.csv  | awk '{ print $1 }')"
+git commit -m "Updated backup: $OldLineCount -> $NewLineCount"
+
+kdialog --title "VestigeBackup complete!" --passivepopup "$OldLineCount -> $NewLineCount" 99999999
