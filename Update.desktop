@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Terminal=true
+Name=Update
+Icon=utilities-terminal
+Exec=cd "$(dirname "%k")" && ./Update.sh
+Terminal=true
+Categories=Application;
