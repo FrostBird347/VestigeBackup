@@ -21598,7 +21598,7 @@ M502
 h3
 v5
 h-3z"/>
-        <path fill="#440a68" d="
+        <path fill="#450a69" d="
 M502
 394
 h3
@@ -24181,9 +24181,10 @@ M489
 337
 h3
 v5
-h-3z
-m0
-5
+h-3z"/>
+        <path fill="#2d0b59" d="
+M489
+342
 h3
 v6
 h-3z"/>
@@ -32731,7 +32732,7 @@ M456
 h2
 v5
 h-2z"/>
-        <path fill="#7a1d6d" d="
+        <path fill="#7c1d6d" d="
 M456
 363
 h2
@@ -33491,10 +33492,9 @@ M453
 363
 h3
 v5
-h-3z"/>
-        <path fill="#7f1e6c" d="
-M453
-368
+h-3z
+m0
+5
 h3
 v6
 h-3z"/>
@@ -39669,10 +39669,9 @@ M435
 670
 h3
 v5
-h-3z"/>
-        <path fill="#120a32" d="
-M435
-675
+h-3z
+m0
+5
 h3
 v5
 h-3z"/>
@@ -43222,7 +43221,7 @@ M425
 h3
 v5
 h-3z"/>
-        <path fill="#510e6c" d="
+        <path fill="#520e6d" d="
 M425
 597
 h3
@@ -46937,7 +46936,7 @@ M415
 h2
 v5
 h-2z"/>
-        <path fill="#550f6d" d="
+        <path fill="#57106e" d="
 M415
 597
 h2
@@ -47629,7 +47628,7 @@ M412
 h3
 v5
 h-3z"/>
-        <path fill="#b0315b" d="
+        <path fill="#ae305c" d="
 M412
 394
 h3
@@ -49668,7 +49667,7 @@ M407
 h3
 v5
 h-3z"/>
-        <path fill="#3d0965" d="
+        <path fill="#400a67" d="
 M407
 561
 h3
@@ -54099,7 +54098,7 @@ m0
 h3
 v6
 h-3z"/>
-        <path fill="#4f0d6c" d="
+        <path fill="#510e6c" d="
 M394
 530
 h3
@@ -59692,7 +59691,7 @@ M376
 h3
 v5
 h-3z"/>
-        <path fill="#4f0d6c" d="
+        <path fill="#510e6c" d="
 M376
 457
 h3
@@ -64295,7 +64294,7 @@ M361
 h2
 v5
 h-2z"/>
-        <path fill="#751b6e" d="
+        <path fill="#771c6d" d="
 M361
 394
 h2
