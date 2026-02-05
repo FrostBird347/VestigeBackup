@@ -224,13 +224,15 @@ function realStart() {
 			if (vestigeCounters.length >= 2) newValue = vestigeCounters[vestigeCounters.length - 2];
 			newCounter.totalCount = (lastValue + newValue);
 			
-			lastValue = 0;
-			if (datasets.counters.length != 0) lastValue = datasets.counters[datasets.counters.length - 1].karmaCount;
-			newValue = 0;
-			if (karmaCounters.length >= 2) newValue = karmaCounters[karmaCounters.length - 2];
-			minusValue = 0;
-			if (karmaCounters.length >= 31) minusValue = karmaCounters[karmaCounters.length - 31];
-			newCounter.karmaCount = (lastValue + newValue - minusValue);
+			if (newCounter.time.valueOf() >= parseDate("01/02/2026 00:00:00").valueOf()) {
+				lastValue = 0;
+				if (datasets.counters.length != 0 && datasets.counters[datasets.counters.length - 1].karmaCount != undefined) lastValue = datasets.counters[datasets.counters.length - 1].karmaCount;
+				newValue = 0;
+				if (karmaCounters.length >= 2) newValue = karmaCounters[karmaCounters.length - 2];
+				minusValue = 0;
+				if (karmaCounters.length >= 31) minusValue = karmaCounters[karmaCounters.length - 31];
+				newCounter.karmaCount = (lastValue + newValue - minusValue);
+			}
 			
 			datasets.counters.push(newCounter);
 		}
@@ -366,7 +368,7 @@ function realStart() {
 	saveGraph(totalCountGraph, "TotalCount");
 	
 	
-	let karmaCountGraph = Plot.line(datasets.counters, {x: "time", y: "karmaCount", type: "utc", domain: [parseDate(vestiges[1][0]).valueOf(), parseDate(vestiges[vestiges.length - 1][0]).valueOf()]}).plot({
+	let karmaCountGraph = Plot.line(datasets.counters.filter((element) => element.karmaCount != undefined), {x: "time", y: "karmaCount", type: "utc", domain: [parseDate("01/02/2026 00:00:01").valueOf(), parseDate(vestiges[vestiges.length - 1][0]).valueOf()]}).plot({
 		y: {grid: true, label: "Karma Vestiges (30 days)"},
 		margin: 60,
 		width: 830,
