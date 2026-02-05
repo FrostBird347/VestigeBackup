@@ -83,7 +83,7 @@ h-6" aria-hidden="true" aria-label="y-axis tick"/>
         <text y=".32em" transform="translate(51 95)">1.8</text>
         <text y=".32em" transform="translate(51 60)">2.0</text>
     </g>
-    <text y=".71em" aria-label="y-axis label" text-anchor="start" transform="translate(3 3)">↑ Karma Vestiges (30 days)</text>
+    <text y=".71em" aria-label="y-axis label" text-anchor="start" transform="translate(3 3)">↑ Karma vestiges (30 days)</text>
     <path fill="none" stroke="currentColor" d="
 M89.583
 410

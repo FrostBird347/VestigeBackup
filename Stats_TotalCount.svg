@@ -111,7 +111,7 @@ h-6" aria-hidden="true" aria-label="y-axis tick"/>
         <text y=".32em" transform="translate(51 86.521)">650,000</text>
         <text y=".32em" transform="translate(51 61.638)">700,000</text>
     </g>
-    <text y=".71em" aria-label="y-axis label" text-anchor="start" transform="translate(3 3)">↑ Total Vestiges</text>
+    <text y=".71em" aria-label="y-axis label" text-anchor="start" transform="translate(3 3)">↑ Total vestiges</text>
     <path fill="none" stroke="currentColor" d="
 M82.449
 410

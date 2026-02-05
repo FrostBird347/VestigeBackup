@@ -62,7 +62,7 @@ h-6" aria-hidden="true" aria-label="y-axis tick"/>
         <text y=".32em" transform="translate(51 127.514)">12,000</text>
         <text y=".32em" transform="translate(51 80.433)">14,000</text>
     </g>
-    <text y=".71em" aria-label="y-axis label" text-anchor="start" transform="translate(3 3)">↑ Visible Vestiges (8 days)</text>
+    <text y=".71em" aria-label="y-axis label" text-anchor="start" transform="translate(3 3)">↑ Visible vestiges (8 days)</text>
     <path fill="none" stroke="currentColor" d="
 M82.449
 410
