@@ -160,6 +160,7 @@ function realStart() {
 	
 	let currentTime = 1677369600000 - 57600000;
 	let vestigeCounters = [];
+	let karmaCounters = [];
 	
 	console.log("Parsing...");
 	for (let i = 1; i < vestiges.length; i++) {
@@ -178,6 +179,7 @@ function realStart() {
 		newVestige.targetPosY = Math.max(Math.min(parseInt(vestiges[i][9]), 1000), -1000);
 		newVestige.travelDistX = newVestige.targetPosX - newVestige.spawnPosX;
 		newVestige.travelDistY = newVestige.targetPosY - newVestige.spawnPosY;
+		newVestige.karmaFlower = vestiges[i][10] == "Y";
 		
 		newVestige.timestamp = parseDate(newVestige.rawTimestamp);
 		
@@ -196,6 +198,7 @@ function realStart() {
 		//For each new day, add an entry
 		while (newVestige.timestamp.valueOf() - currentTime >= 57600000) {
 			vestigeCounters.push(0);
+			karmaCounters.push(0);
 			currentTime += 57600000;
 			let newCounter = {time: new Date(currentTime)};
 			
@@ -212,7 +215,7 @@ function realStart() {
 			newValue = 0;
 			if (vestigeCounters.length >= 2) newValue = vestigeCounters[vestigeCounters.length - 2];
 			minusValue = 0;
-			if (vestigeCounters.length >= 5) minusValue = vestigeCounters[vestigeCounters.length - 5];
+			if (vestigeCounters.length >= 9) minusValue = vestigeCounters[vestigeCounters.length - 9];
 			newCounter.visibleCount = (lastValue + newValue - minusValue);
 			
 			lastValue = 0;
@@ -221,9 +224,18 @@ function realStart() {
 			if (vestigeCounters.length >= 2) newValue = vestigeCounters[vestigeCounters.length - 2];
 			newCounter.totalCount = (lastValue + newValue);
 			
+			lastValue = 0;
+			if (datasets.counters.length != 0) lastValue = datasets.counters[datasets.counters.length - 1].karmaCount;
+			newValue = 0;
+			if (karmaCounters.length >= 2) newValue = karmaCounters[karmaCounters.length - 2];
+			minusValue = 0;
+			if (karmaCounters.length >= 31) minusValue = karmaCounters[karmaCounters.length - 31];
+			newCounter.karmaCount = (lastValue + newValue - minusValue);
+			
 			datasets.counters.push(newCounter);
 		}
 		vestigeCounters[vestigeCounters.length - 1]++;
+		if (newVestige.karmaFlower) karmaCounters[karmaCounters.length - 1]++;
 	}
 	
 	console.log("Generating Graphs...");
@@ -335,7 +347,7 @@ function realStart() {
 	
 	
 	let visibleCountGraph = Plot.line(datasets.counters, {x: "time", y: "visibleCount", type: "utc", domain: [parseDate(vestiges[1][0]).valueOf(), parseDate(vestiges[vestiges.length - 1][0]).valueOf()]}).plot({
-		y: {grid: true, label: "Visible Vestiges (4 days)"},
+		y: {grid: true, label: "Visible Vestiges (8 days)"},
 		margin: 60,
 		width: 830,
 		style: {color: "dodgerblue"},
@@ -352,6 +364,16 @@ function realStart() {
 		document: (new JSDOM(`...`)).window.document
 	});
 	saveGraph(totalCountGraph, "TotalCount");
+	
+	
+	let karmaCountGraph = Plot.line(datasets.counters, {x: "time", y: "karmaCount", type: "utc", domain: [parseDate(vestiges[1][0]).valueOf(), parseDate(vestiges[vestiges.length - 1][0]).valueOf()]}).plot({
+		y: {grid: true, label: "Karma Vestiges (30 days)"},
+		margin: 60,
+		width: 830,
+		style: {color: "dodgerblue"},
+		document: (new JSDOM(`...`)).window.document
+	});
+	saveGraph(karmaCountGraph, "KarmaCount");
 	
 	
 	let spawnPosHeat = Plot.rect(datasets.vestigeList, Plot.bin({fill: "count"}, {x: "spawnPosX", y: "spawnPosY", thresholds: 1000, inset: 0})).plot({

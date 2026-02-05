@@ -33,6 +33,10 @@ Vestige Count (Infinite lifespan):
 
 ![Total Count (within this repo)](./Stats_TotalCount.svg)
 
+Karma Vestige Count (Max lifespan):
+
+![Karma Count](./Stats_KarmaCount.svg)
+
 Vestage Spawn Pos Heatmap:
 
 ![Spawn Position](./Stats_SpawnPos.svg)
