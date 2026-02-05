@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="470" fill="currentColor" class="plot-d6a7b5" font-family="system-ui, sans-serif" font-size="10" style="--plot-background:white;display:block;height:intrinsic;max-width:100%;color:#1e90ff" text-anchor="middle" viewBox="0 0 830 470">
+    <style>
+        :where(.plot-d6a7b5 text),:where(.plot-d6a7b5 tspan){white-space:pre}
+    </style>
+    <path stroke="currentColor" stroke-opacity=".1" d="
+M60
+410
+h710
+M60
+375
+h710
+M60
+340
+h710
+M60
+305
+h710
+M60
+270
+h710
+M60
+235
+h710
+M60
+200
+h710
+M60
+165
+h710
+M60
+130
+h710
+M60
+95
+h710
+M60
+60
+h710" aria-hidden="true" aria-label="y-grid"/>
+    <path fill="none" stroke="currentColor" d="
+M60
+410
+h-6
+m6
+-35
+h-6
+m6
+-35
+h-6
+m6
+-35
+h-6
+m6
+-35
+h-6
+m6
+-35
+h-6
+m6
+-35
+h-6
+m6
+-35
+h-6
+m6
+-35
+h-6
+m6
+-35
+h-6
+m6
+-35
+h-6" aria-hidden="true" aria-label="y-axis tick"/>
+    <g aria-label="y-axis tick label" font-variant="tabular-nums" text-anchor="end">
+        <text y=".32em" transform="translate(51 410)">0.0</text>
+        <text y=".32em" transform="translate(51 375)">0.2</text>
+        <text y=".32em" transform="translate(51 340)">0.4</text>
+        <text y=".32em" transform="translate(51 305)">0.6</text>
+        <text y=".32em" transform="translate(51 270)">0.8</text>
+        <text y=".32em" transform="translate(51 235)">1.0</text>
+        <text y=".32em" transform="translate(51 200)">1.2</text>
+        <text y=".32em" transform="translate(51 165)">1.4</text>
+        <text y=".32em" transform="translate(51 130)">1.6</text>
+        <text y=".32em" transform="translate(51 95)">1.8</text>
+        <text y=".32em" transform="translate(51 60)">2.0</text>
+    </g>
+    <text y=".71em" aria-label="y-axis label" text-anchor="start" transform="translate(3 3)">↑ Karma Vestiges (30 days)</text>
+    <path fill="none" stroke="currentColor" d="
+M82.449
+410
+v6
+m60.084
+-6
+v6
+m60.744
+-6
+v6
+m60.743
+-6
+v6
+m60.084
+-6
+v6
+m60.084
+-6
+v6
+m60.744
+-6
+v6
+m60.744
+-6
+v6
+m59.424
+-6
+v6
+m60.083
+-6
+v6
+m60.744
+-6
+v6
+m60.743
+-6
+v6" aria-hidden="true" aria-label="x-axis tick"/>
+    <g aria-label="x-axis tick label" font-variant="tabular-nums">
+        <text transform="translate(82.449 419)"><tspan x="0" y=".71em">Apr</tspan><tspan x="0" dy="1em">2023</tspan></text>
+        <text y=".71em" transform="translate(142.533 419)">Jul</text>
+        <text y=".71em" transform="translate(203.277 419)">Oct</text>
+        <text transform="translate(264.02 419)"><tspan x="0" y=".71em">Jan</tspan><tspan x="0" dy="1em">2024</tspan></text>
+        <text y=".71em" transform="translate(324.104 419)">Apr</text>
+        <text y=".71em" transform="translate(384.188 419)">Jul</text>
+        <text y=".71em" transform="translate(444.932 419)">Oct</text>
+        <text transform="translate(505.676 419)"><tspan x="0" y=".71em">Jan</tspan><tspan x="0" dy="1em">2025</tspan></text>
+        <text y=".71em" transform="translate(565.1 419)">Apr</text>
+        <text y=".71em" transform="translate(625.183 419)">Jul</text>
+        <text y=".71em" transform="translate(685.927 419)">Oct</text>
+        <text transform="translate(746.67 419)"><tspan x="0" y=".71em">Jan</tspan><tspan x="0" dy="1em">2026</tspan></text>
+    </g>
+    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="
+M60
+410
+h708.679
+l.441
+-350
+h.88" aria-label="line"/>
+</svg>
