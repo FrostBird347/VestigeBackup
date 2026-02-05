@@ -339,7 +339,7 @@ function realStart() {
 	
 	
 	let activeCountGraph = Plot.line(datasets.counters, {x: "time", y: "activeCount", type: "utc", domain: [parseDate(vestiges[1][0]).valueOf(), parseDate(vestiges[vestiges.length - 1][0]).valueOf()]}).plot({
-		y: {grid: true, label: "Visible Vestiges (30 days)"},
+		y: {grid: true, label: "Visible vestiges (30 days)"},
 		margin: 60,
 		width: 830,
 		style: {color: "dodgerblue"},
@@ -349,7 +349,7 @@ function realStart() {
 	
 	
 	let visibleCountGraph = Plot.line(datasets.counters, {x: "time", y: "visibleCount", type: "utc", domain: [parseDate(vestiges[1][0]).valueOf(), parseDate(vestiges[vestiges.length - 1][0]).valueOf()]}).plot({
-		y: {grid: true, label: "Visible Vestiges (8 days)"},
+		y: {grid: true, label: "Visible vestiges (8 days)"},
 		margin: 60,
 		width: 830,
 		style: {color: "dodgerblue"},
@@ -359,7 +359,7 @@ function realStart() {
 	
 	
 	let totalCountGraph = Plot.line(datasets.counters, {x: "time", y: "totalCount", type: "utc", domain: [parseDate(vestiges[1][0]).valueOf(), parseDate(vestiges[vestiges.length - 1][0]).valueOf()]}).plot({
-		y: {grid: true, label: "Total Vestiges"},
+		y: {grid: true, label: "Total vestiges"},
 		margin: 60,
 		width: 830,
 		style: {color: "dodgerblue"},
@@ -369,7 +369,7 @@ function realStart() {
 	
 	
 	let karmaCountGraph = Plot.line(datasets.counters.filter((element) => element.karmaCount != undefined), {x: "time", y: "karmaCount", type: "utc", domain: [parseDate("01/02/2026 00:00:01").valueOf(), parseDate(vestiges[vestiges.length - 1][0]).valueOf()]}).plot({
-		y: {grid: true, label: "Karma Vestiges (30 days)"},
+		y: {grid: true, label: "Karma vestiges (30 days)"},
 		margin: 60,
 		width: 830,
 		style: {color: "dodgerblue"},
