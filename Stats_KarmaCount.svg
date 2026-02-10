@@ -7,31 +7,46 @@ M60
 410
 h710
 M60
-375
+386.667
+h710
+M60
+363.333
 h710
 M60
 340
 h710
 M60
-305
+316.667
+h710
+M60
+293.333
 h710
 M60
 270
 h710
 M60
-235
+246.667
+h710
+M60
+223.333
 h710
 M60
 200
 h710
 M60
-165
+176.667
+h710
+M60
+153.333
 h710
 M60
 130
 h710
 M60
-95
+106.667
+h710
+M60
+83.333
 h710
 M60
 60
@@ -41,89 +56,116 @@ M60
 410
 h-6
 m6
--35
+-23.333
 h-6
 m6
--35
+-23.334
+h-6
+M60
+340
 h-6
 m6
--35
+-23.333
 h-6
 m6
--35
+-23.334
+h-6
+M60
+270
 h-6
 m6
--35
+-23.333
 h-6
 m6
--35
+-23.334
+h-6
+M60
+200
 h-6
 m6
--35
+-23.333
 h-6
 m6
--35
+-23.334
+h-6
+M60
+130
 h-6
 m6
--35
+-23.333
 h-6
 m6
--35
+-23.334
+h-6
+M60
+60
 h-6" aria-hidden="true" aria-label="y-axis tick"/>
     <g aria-label="y-axis tick label" font-variant="tabular-nums" text-anchor="end">
         <text y=".32em" transform="translate(51 410)">0.0</text>
-        <text y=".32em" transform="translate(51 375)">0.2</text>
-        <text y=".32em" transform="translate(51 340)">0.4</text>
-        <text y=".32em" transform="translate(51 305)">0.6</text>
-        <text y=".32em" transform="translate(51 270)">0.8</text>
-        <text y=".32em" transform="translate(51 235)">1.0</text>
-        <text y=".32em" transform="translate(51 200)">1.2</text>
-        <text y=".32em" transform="translate(51 165)">1.4</text>
-        <text y=".32em" transform="translate(51 130)">1.6</text>
-        <text y=".32em" transform="translate(51 95)">1.8</text>
-        <text y=".32em" transform="translate(51 60)">2.0</text>
+        <text y=".32em" transform="translate(51 386.667)">0.2</text>
+        <text y=".32em" transform="translate(51 363.333)">0.4</text>
+        <text y=".32em" transform="translate(51 340)">0.6</text>
+        <text y=".32em" transform="translate(51 316.667)">0.8</text>
+        <text y=".32em" transform="translate(51 293.333)">1.0</text>
+        <text y=".32em" transform="translate(51 270)">1.2</text>
+        <text y=".32em" transform="translate(51 246.667)">1.4</text>
+        <text y=".32em" transform="translate(51 223.333)">1.6</text>
+        <text y=".32em" transform="translate(51 200)">1.8</text>
+        <text y=".32em" transform="translate(51 176.667)">2.0</text>
+        <text y=".32em" transform="translate(51 153.333)">2.2</text>
+        <text y=".32em" transform="translate(51 130)">2.4</text>
+        <text y=".32em" transform="translate(51 106.667)">2.6</text>
+        <text y=".32em" transform="translate(51 83.333)">2.8</text>
+        <text y=".32em" transform="translate(51 60)">3.0</text>
     </g>
     <text y=".71em" aria-label="y-axis label" text-anchor="start" transform="translate(3 3)">↑ Karma vestiges (30 days)</text>
     <path fill="none" stroke="currentColor" d="
-M89.583
+M114.615
 410
 v6
-m88.75
+m81.923
 -6
 v6
-m88.75
+m81.924
 -6
 v6
-m88.75
+m81.923
 -6
 v6
-m88.75
+m81.923
 -6
 v6
-m88.75
+m81.922
 -6
 v6
-m88.75
+m81.924
 -6
 v6
-m88.75
+m81.923
 -6
+v6
+M770
+410
 v6" aria-hidden="true" aria-label="x-axis tick"/>
     <g aria-label="x-axis tick label" font-variant="tabular-nums">
-        <text transform="translate(89.583 419)"><tspan x="0" y=".71em">12 PM</tspan><tspan x="0" dy="1em">Feb 1</tspan></text>
-        <text transform="translate(178.333 419)"><tspan x="0" y=".71em">12 AM</tspan><tspan x="0" dy="1em">Feb 2</tspan></text>
-        <text y=".71em" transform="translate(267.083 419)">12 PM</text>
-        <text transform="translate(355.833 419)"><tspan x="0" y=".71em">12 AM</tspan><tspan x="0" dy="1em">Feb 3</tspan></text>
-        <text y=".71em" transform="translate(444.583 419)">12 PM</text>
-        <text transform="translate(533.333 419)"><tspan x="0" y=".71em">12 AM</tspan><tspan x="0" dy="1em">Feb 4</tspan></text>
-        <text y=".71em" transform="translate(622.083 419)">12 PM</text>
-        <text transform="translate(710.833 419)"><tspan x="0" y=".71em">12 AM</tspan><tspan x="0" dy="1em">Feb 5</tspan></text>
+        <text transform="translate(114.615 419)"><tspan x="0" y=".71em">2</tspan><tspan x="0" dy="1em">Feb</tspan></text>
+        <text y=".71em" transform="translate(196.538 419)">3</text>
+        <text y=".71em" transform="translate(278.462 419)">4</text>
+        <text y=".71em" transform="translate(360.385 419)">5</text>
+        <text y=".71em" transform="translate(442.308 419)">6</text>
+        <text y=".71em" transform="translate(524.23 419)">7</text>
+        <text y=".71em" transform="translate(606.154 419)">8</text>
+        <text y=".71em" transform="translate(688.077 419)">9</text>
+        <text y=".71em" transform="translate(770 419)">10</text>
     </g>
     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="
 M60
 410
-h355
-L533.333
+h163.846
+l54.616
+-233.333
+h327.692
+L660.769
 60
 H770" aria-label="line"/>
 </svg>
