@@ -71,47 +71,55 @@ h-6" aria-hidden="true" aria-label="y-axis tick"/>
     </g>
     <text y=".71em" aria-label="y-axis label" text-anchor="start" transform="translate(3 3)">↑ Karma vestiges (30 days)</text>
     <path fill="none" stroke="currentColor" d="
-M95.5
+M86.296
 410
 v6
-m106.5
+m78.889
 -6
 v6
-m106.5
+m78.889
 -6
 v6
-m106.5
+m78.889
 -6
 v6
-m106.5
+m78.889
 -6
 v6
-m106.5
+m78.888
 -6
 v6
-m106.5
+m78.89
+-6
+v6
+m78.889
+-6
+v6
+m78.888
 -6
 v6" aria-hidden="true" aria-label="x-axis tick"/>
     <g aria-label="x-axis tick label" font-variant="tabular-nums">
-        <text transform="translate(95.5 419)"><tspan x="0" y=".71em">2</tspan><tspan x="0" dy="1em">Feb</tspan></text>
-        <text y=".71em" transform="translate(202 419)">4</text>
-        <text y=".71em" transform="translate(308.5 419)">6</text>
-        <text y=".71em" transform="translate(415 419)">8</text>
-        <text y=".71em" transform="translate(521.5 419)">10</text>
-        <text y=".71em" transform="translate(628 419)">12</text>
-        <text y=".71em" transform="translate(734.5 419)">14</text>
+        <text transform="translate(86.296 419)"><tspan x="0" y=".71em">2</tspan><tspan x="0" dy="1em">Feb</tspan></text>
+        <text y=".71em" transform="translate(165.185 419)">4</text>
+        <text y=".71em" transform="translate(244.074 419)">6</text>
+        <text y=".71em" transform="translate(322.963 419)">8</text>
+        <text y=".71em" transform="translate(401.852 419)">10</text>
+        <text y=".71em" transform="translate(480.74 419)">12</text>
+        <text y=".71em" transform="translate(559.63 419)">14</text>
+        <text y=".71em" transform="translate(638.519 419)">16</text>
+        <text y=".71em" transform="translate(717.407 419)">18</text>
     </g>
     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="
 M60
 410
-h106.5
-L202
-235
-h213
-l35.5
+h78.889
+l26.296
+-175
+h157.778
+l26.296
 -87.5
-h213
-L699
+h157.778
+L533.333
 60
-h71" aria-label="line"/>
+H770" aria-label="line"/>
 </svg>
