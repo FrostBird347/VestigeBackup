@@ -71,55 +71,51 @@ h-6" aria-hidden="true" aria-label="y-axis tick"/>
     </g>
     <text y=".71em" aria-label="y-axis label" text-anchor="start" transform="translate(3 3)">↑ Karma vestiges (30 days)</text>
     <path fill="none" stroke="currentColor" d="
-M86.296
+M193.962
 410
 v6
-m78.889
+m140.661
 -6
 v6
-m78.889
+m140.66
 -6
 v6
-m78.889
+m140.66
 -6
 v6
-m78.889
--6
-v6
-m78.888
--6
-v6
-m78.89
--6
-v6
-m78.889
--6
-v6
-m78.888
+m140.661
 -6
 v6" aria-hidden="true" aria-label="x-axis tick"/>
     <g aria-label="x-axis tick label" font-variant="tabular-nums">
-        <text transform="translate(86.296 419)"><tspan x="0" y=".71em">2</tspan><tspan x="0" dy="1em">Feb</tspan></text>
-        <text y=".71em" transform="translate(165.185 419)">4</text>
-        <text y=".71em" transform="translate(244.074 419)">6</text>
-        <text y=".71em" transform="translate(322.963 419)">8</text>
-        <text y=".71em" transform="translate(401.852 419)">10</text>
-        <text y=".71em" transform="translate(480.74 419)">12</text>
-        <text y=".71em" transform="translate(559.63 419)">14</text>
-        <text y=".71em" transform="translate(638.519 419)">16</text>
-        <text y=".71em" transform="translate(717.407 419)">18</text>
+        <text transform="translate(193.962 419)"><tspan x="0" y=".71em">8</tspan><tspan x="0" dy="1em">Feb</tspan></text>
+        <text y=".71em" transform="translate(334.623 419)">15</text>
+        <text y=".71em" transform="translate(475.283 419)">22</text>
+        <text transform="translate(615.943 419)"><tspan x="0" y=".71em">1</tspan><tspan x="0" dy="1em">Mar</tspan></text>
+        <text y=".71em" transform="translate(756.604 419)">8</text>
     </g>
     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="
 M60
 410
-h78.889
-l26.296
+h40.189
+l13.396
 -175
-h157.778
-l26.296
+h80.377
+l13.396
 -87.5
-h157.778
-L533.333
+h80.378
+L301.132
 60
+h187.547
+l13.396
+175
+h80.378
+l13.396
+87.5
+h40.189
+l13.396
+-87.5
+h26.792
+l13.397
+87.5
 H770" aria-label="line"/>
 </svg>
