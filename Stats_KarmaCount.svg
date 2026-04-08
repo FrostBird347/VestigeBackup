@@ -7,31 +7,37 @@ M60
 410
 h710
 M60
-375
+380.833
 h710
 M60
-340
+351.667
 h710
 M60
-305
+322.5
 h710
 M60
-270
+293.333
+h710
+M60
+264.167
 h710
 M60
 235
 h710
 M60
-200
+205.833
 h710
 M60
-165
+176.667
 h710
 M60
-130
+147.5
 h710
 M60
-95
+118.333
+h710
+M60
+89.167
 h710
 M60
 60
@@ -41,101 +47,133 @@ M60
 410
 h-6
 m6
--35
+-29.167
 h-6
 m6
--35
+-29.166
 h-6
 m6
--35
+-29.167
 h-6
 m6
--35
+-29.167
 h-6
 m6
--35
+-29.166
+h-6
+M60
+235
 h-6
 m6
--35
+-29.167
 h-6
 m6
--35
+-29.166
 h-6
 m6
--35
+-29.167
 h-6
 m6
--35
+-29.167
 h-6
 m6
--35
+-29.166
+h-6
+M60
+60
 h-6" aria-hidden="true" aria-label="y-axis tick"/>
     <g aria-label="y-axis tick label" font-variant="tabular-nums" text-anchor="end">
         <text y=".32em" transform="translate(51 410)">0.0</text>
-        <text y=".32em" transform="translate(51 375)">0.5</text>
-        <text y=".32em" transform="translate(51 340)">1.0</text>
-        <text y=".32em" transform="translate(51 305)">1.5</text>
-        <text y=".32em" transform="translate(51 270)">2.0</text>
-        <text y=".32em" transform="translate(51 235)">2.5</text>
-        <text y=".32em" transform="translate(51 200)">3.0</text>
-        <text y=".32em" transform="translate(51 165)">3.5</text>
-        <text y=".32em" transform="translate(51 130)">4.0</text>
-        <text y=".32em" transform="translate(51 95)">4.5</text>
-        <text y=".32em" transform="translate(51 60)">5.0</text>
+        <text y=".32em" transform="translate(51 380.833)">0.5</text>
+        <text y=".32em" transform="translate(51 351.667)">1.0</text>
+        <text y=".32em" transform="translate(51 322.5)">1.5</text>
+        <text y=".32em" transform="translate(51 293.333)">2.0</text>
+        <text y=".32em" transform="translate(51 264.167)">2.5</text>
+        <text y=".32em" transform="translate(51 235)">3.0</text>
+        <text y=".32em" transform="translate(51 205.833)">3.5</text>
+        <text y=".32em" transform="translate(51 176.667)">4.0</text>
+        <text y=".32em" transform="translate(51 147.5)">4.5</text>
+        <text y=".32em" transform="translate(51 118.333)">5.0</text>
+        <text y=".32em" transform="translate(51 89.167)">5.5</text>
+        <text y=".32em" transform="translate(51 60)">6.0</text>
     </g>
     <text y=".71em" aria-label="y-axis label" text-anchor="start" transform="translate(3 3)">↑ Karma vestiges (30 days)</text>
     <path fill="none" stroke="currentColor" d="
-M176.393
+M140.682
 410
 v6
-m122.214
+m84.716
 -6
 v6
-m122.213
+m84.716
 -6
 v6
-m122.213
+m84.716
 -6
 v6
-m122.213
+m84.715
+-6
+v6
+m84.716
+-6
+v6
+m84.716
+-6
+v6
+m84.716
 -6
 v6" aria-hidden="true" aria-label="x-axis tick"/>
     <g aria-label="x-axis tick label" font-variant="tabular-nums">
-        <text transform="translate(176.393 419)"><tspan x="0" y=".71em">8</tspan><tspan x="0" dy="1em">Feb</tspan></text>
-        <text y=".71em" transform="translate(298.607 419)">15</text>
-        <text y=".71em" transform="translate(420.82 419)">22</text>
-        <text transform="translate(543.033 419)"><tspan x="0" y=".71em">1</tspan><tspan x="0" dy="1em">Mar</tspan></text>
-        <text y=".71em" transform="translate(665.246 419)">8</text>
+        <text transform="translate(140.682 419)"><tspan x="0" y=".71em">8</tspan><tspan x="0" dy="1em">Feb</tspan></text>
+        <text y=".71em" transform="translate(225.398 419)">15</text>
+        <text y=".71em" transform="translate(310.114 419)">22</text>
+        <text transform="translate(394.83 419)"><tspan x="0" y=".71em">1</tspan><tspan x="0" dy="1em">Mar</tspan></text>
+        <text y=".71em" transform="translate(479.545 419)">8</text>
+        <text y=".71em" transform="translate(564.261 419)">15</text>
+        <text y=".71em" transform="translate(648.977 419)">22</text>
+        <text y=".71em" transform="translate(733.693 419)">29</text>
     </g>
     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="
 M60
 410
-h34.918
-l11.639
--140
-h69.836
-l11.64
--70
-h69.836
-l11.639
--70
-h162.951
-l11.639
-140
-h69.836
-l11.64
-70
-h34.918
-l11.639
--70
-h23.279
-l11.639
-70
-h116.394
-l11.639
--140
-h11.639
-l11.64
--140
+h24.205
+l8.068
+-116.667
+h48.409
+L148.75
+235
+h48.409
+l8.068
+-58.333
+h112.955
+l8.068
+116.666
+h48.409
+l8.068
+58.334
+h24.205
+L415
+293.333
+h16.136
+l8.069
+58.334
+h80.681
+L527.955
+235
+h8.068
+l8.068
+-116.667
+h24.204
+L576.364
+60
+h64.545
+l8.068
+58.333
+h56.478
+L713.523
+60
+h40.341
+l8.068
+116.667
 H770" aria-label="line"/>
 </svg>
