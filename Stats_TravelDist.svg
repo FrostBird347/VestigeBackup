@@ -7811,6 +7811,12 @@ M643
 h3
 v5
 h-3z"/>
+        <path fill="#000004" d="
+M643
+405
+h3
+v5
+h-3z"/>
         <path fill="#120a32" d="
 M643
 410
@@ -29457,14 +29463,15 @@ M469
 h2
 v5
 h-2z"/>
-        <path fill="#7d1e6d" d="
+        <path fill="#7f1e6c" d="
 M469
 462
 h2
 v5
-h-2z
-m0
-5
+h-2z"/>
+        <path fill="#7d1e6d" d="
+M469
+467
 h2
 v5
 h-2z"/>
@@ -30870,7 +30877,7 @@ M464
 h2
 v5
 h-2z"/>
-        <path fill="#57106e" d="
+        <path fill="#59106e" d="
 M464
 420
 h2
@@ -37210,7 +37217,7 @@ m0
 h3
 v5
 h-3z"/>
-        <path fill="#902568" d="
+        <path fill="#922568" d="
 M443
 483
 h3
@@ -37234,7 +37241,7 @@ M443
 h3
 v6
 h-3z"/>
-        <path fill="#781c6d" d="
+        <path fill="#7a1d6d" d="
 M443
 504
 h3
@@ -39752,7 +39759,7 @@ M435
 h3
 v6
 h-3z"/>
-        <path fill="#65156e" d="
+        <path fill="#67166e" d="
 M435
 452
 h3
@@ -42738,15 +42745,14 @@ M428
 h2
 v5
 h-2z"/>
-        <path fill="#000004" d="
+        <path fill="#09061f" d="
 M428
 665
 h2
 v5
-h-2z"/>
-        <path fill="#09061f" d="
-M428
-670
+h-2z
+m0
+5
 h2
 v5
 h-2z"/>
@@ -43364,7 +43370,7 @@ M425
 h3
 v6
 h-3z"/>
-        <path fill="#84206b" d="
+        <path fill="#85216b" d="
 M425
 426
 h3
@@ -44255,7 +44261,7 @@ M422
 h3
 v5
 h-3z"/>
-        <path fill="#e25734" d="
+        <path fill="#e35933" d="
 M422
 389
 h3
@@ -45267,14 +45273,15 @@ M420
 h2
 v5
 h-2z"/>
-        <path fill="#6f196e" d="
+        <path fill="#71196e" d="
 M420
 441
 h2
 v5
-h-2z
-m0
-5
+h-2z"/>
+        <path fill="#6f196e" d="
+M420
+446
 h2
 v6
 h-2z"/>
@@ -50813,15 +50820,14 @@ M404
 h3
 v5
 h-3z"/>
-        <path fill="#88226a" d="
+        <path fill="#8a226a" d="
 M404
 462
 h3
 v5
-h-3z"/>
-        <path fill="#8a226a" d="
-M404
-467
+h-3z
+m0
+5
 h3
 v5
 h-3z"/>
@@ -56104,7 +56110,7 @@ M389
 h3
 v5
 h-3z"/>
-        <path fill="#510e6c" d="
+        <path fill="#520e6d" d="
 M389
 457
 h3
@@ -57781,7 +57787,7 @@ M384
 h2
 v5
 h-2z"/>
-        <path fill="#540f6d" d="
+        <path fill="#550f6d" d="
 M384
 457
 h2
@@ -58538,7 +58544,7 @@ M381
 h3
 v5
 h-3z"/>
-        <path fill="#510e6c" d="
+        <path fill="#520e6d" d="
 M381
 457
 h3
@@ -60091,7 +60097,7 @@ M376
 h3
 v5
 h-3z"/>
-        <path fill="#510e6c" d="
+        <path fill="#520e6d" d="
 M376
 457
 h3
@@ -76310,7 +76316,7 @@ M310
 h2
 v5
 h-2z"/>
-        <path fill="#320a5e" d="
+        <path fill="#360961" d="
 M310
 415
 h2
