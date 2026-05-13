@@ -99,118 +99,123 @@ h-6" aria-hidden="true" aria-label="y-axis tick"/>
     </g>
     <text y=".71em" aria-label="y-axis label" text-anchor="start" transform="translate(3 3)">↑ Karma vestiges (30 days)</text>
     <path fill="none" stroke="currentColor" d="
-M110.355
+M107.02
 410
 v6
-m52.872
+m49.37
 -6
 v6
-m52.873
+m49.372
 -6
 v6
-m52.872
+m49.37
 -6
 v6
-m52.872
+m49.371
 -6
 v6
-m52.872
+m49.371
 -6
 v6
-m52.873
+m49.371
 -6
 v6
-m52.872
+m49.371
 -6
 v6
-m52.872
+m49.371
 -6
 v6
-m52.873
+m49.371
 -6
 v6
-m52.872
+m49.37
 -6
 v6
-m52.872
+m49.372
 -6
 v6
-m52.873
+m49.37
+-6
+v6
+m49.371
 -6
 v6" aria-hidden="true" aria-label="x-axis tick"/>
     <g aria-label="x-axis tick label" font-variant="tabular-nums">
-        <text transform="translate(110.355 419)"><tspan x="0" y=".71em">8</tspan><tspan x="0" dy="1em">Feb</tspan></text>
-        <text y=".71em" transform="translate(163.227 419)">15</text>
-        <text y=".71em" transform="translate(216.1 419)">22</text>
-        <text transform="translate(268.972 419)"><tspan x="0" y=".71em">1</tspan><tspan x="0" dy="1em">Mar</tspan></text>
-        <text y=".71em" transform="translate(321.844 419)">8</text>
-        <text y=".71em" transform="translate(374.716 419)">15</text>
-        <text y=".71em" transform="translate(427.589 419)">22</text>
-        <text y=".71em" transform="translate(480.461 419)">29</text>
-        <text transform="translate(533.333 419)"><tspan x="0" y=".71em">5</tspan><tspan x="0" dy="1em">Apr</tspan></text>
-        <text y=".71em" transform="translate(586.206 419)">12</text>
-        <text y=".71em" transform="translate(639.078 419)">19</text>
-        <text y=".71em" transform="translate(691.95 419)">26</text>
-        <text transform="translate(744.823 419)"><tspan x="0" y=".71em">3</tspan><tspan x="0" dy="1em">May</tspan></text>
+        <text transform="translate(107.02 419)"><tspan x="0" y=".71em">8</tspan><tspan x="0" dy="1em">Feb</tspan></text>
+        <text y=".71em" transform="translate(156.39 419)">15</text>
+        <text y=".71em" transform="translate(205.762 419)">22</text>
+        <text transform="translate(255.132 419)"><tspan x="0" y=".71em">1</tspan><tspan x="0" dy="1em">Mar</tspan></text>
+        <text y=".71em" transform="translate(304.503 419)">8</text>
+        <text y=".71em" transform="translate(353.874 419)">15</text>
+        <text y=".71em" transform="translate(403.245 419)">22</text>
+        <text y=".71em" transform="translate(452.616 419)">29</text>
+        <text transform="translate(501.987 419)"><tspan x="0" y=".71em">5</tspan><tspan x="0" dy="1em">Apr</tspan></text>
+        <text y=".71em" transform="translate(551.358 419)">12</text>
+        <text y=".71em" transform="translate(600.728 419)">19</text>
+        <text y=".71em" transform="translate(650.1 419)">26</text>
+        <text transform="translate(699.47 419)"><tspan x="0" y=".71em">3</tspan><tspan x="0" dy="1em">May</tspan></text>
+        <text y=".71em" transform="translate(748.841 419)">10</text>
     </g>
     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="
 M60
 410
-h15.106
-l5.036
+h14.106
+l4.702
 -116.667
-h30.213
-L115.39
+h28.212
+L111.722
 235
-h30.213
-l5.035
+h28.212
+l4.702
 -58.333
-h70.497
-l5.035
+h65.828
+l4.702
 116.666
-h30.213
-l5.035
+h28.211
+l4.702
 58.334
-h15.107
-l5.035
+h14.106
+l4.702
 -58.334
-h10.071
-l5.036
+h9.404
+l4.702
 58.334
-h50.354
-L352.057
+h47.02
+L332.715
 235
-h5.035
-l5.036
+h4.702
+l4.702
 -116.667
-h15.106
-L382.27
+h14.106
+L360.927
 60
-h40.283
-l5.036
+h37.616
+l4.702
 58.333
-h35.248
-L467.872
+h32.914
+L440.861
 60
-h25.178
-l5.035
+h23.51
+l4.702
 116.667
-h5.036
-l5.035
+h4.702
+l4.702
 116.666
-h15.106
-l5.036
+h14.106
+l4.702
 58.334
-h90.638
-l5.036
+h84.636
+l4.702
 -58.334
-h55.39
-L684.397
+h51.721
+L643.046
 235
-h70.497
-l5.035
+h65.828
+l4.702
 58.333
-h5.036
-L770
-351.667" aria-label="line"/>
+h4.702
+l4.702
+58.334
+H770" aria-label="line"/>
 </svg>
