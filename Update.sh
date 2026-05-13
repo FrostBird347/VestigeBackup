@@ -31,3 +31,4 @@ git add ./VestigeBackup.csv ./Stats_ActiveCount.svg ./Stats_RegionFreq.svg ./Sta
 git commit -m "Updated backup: $OldLineCount -> $NewLineCount"
 
 kdialog --title "VestigeBackup complete!" --passivepopup "$OldLineCount -> $NewLineCount" 99999999
+gitoptim.sh .
