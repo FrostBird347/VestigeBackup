@@ -83,19 +83,13 @@ M60
 60
 h-6" aria-hidden="true" aria-label="y-axis tick"/>
     <g aria-label="y-axis tick label" font-variant="tabular-nums" text-anchor="end">
-        <text y=".32em" transform="translate(51 410)">0.0</text>
-        <text y=".32em" transform="translate(51 380.833)">0.5</text>
-        <text y=".32em" transform="translate(51 351.667)">1.0</text>
-        <text y=".32em" transform="translate(51 322.5)">1.5</text>
-        <text y=".32em" transform="translate(51 293.333)">2.0</text>
-        <text y=".32em" transform="translate(51 264.167)">2.5</text>
-        <text y=".32em" transform="translate(51 235)">3.0</text>
-        <text y=".32em" transform="translate(51 205.833)">3.5</text>
-        <text y=".32em" transform="translate(51 176.667)">4.0</text>
-        <text y=".32em" transform="translate(51 147.5)">4.5</text>
-        <text y=".32em" transform="translate(51 118.333)">5.0</text>
-        <text y=".32em" transform="translate(51 89.167)">5.5</text>
-        <text y=".32em" transform="translate(51 60)">6.0</text>
+        <text y=".32em" transform="translate(51 410)">0</text>
+        <text y=".32em" transform="translate(51 351.667)">1</text>
+        <text y=".32em" transform="translate(51 293.333)">2</text>
+        <text y=".32em" transform="translate(51 235)">3</text>
+        <text y=".32em" transform="translate(51 176.667)">4</text>
+        <text y=".32em" transform="translate(51 118.333)">5</text>
+        <text y=".32em" transform="translate(51 60)">6</text>
     </g>
     <text y=".71em" aria-label="y-axis label" text-anchor="start" transform="translate(3 3)">↑ Karma vestiges (30 days)</text>
     <path fill="none" stroke="currentColor" d="
