@@ -369,7 +369,7 @@ function realStart() {
 	
 	
 	let karmaCountGraph = Plot.line(datasets.counters.filter((element) => element.karmaCount != undefined), {x: "time", y: "karmaCount", type: "utc", domain: [parseDate("01/02/2026 00:00:01").valueOf(), parseDate(vestiges[vestiges.length - 1][0]).valueOf()]}).plot({
-		y: {grid: true, label: "Karma vestiges (30 days)"},
+		y: {grid: true, label: "Karma vestiges (30 days)", tickFormat: d => d > Math.floor(d) ? "" : `${d}`},
 		margin: 60,
 		width: 830,
 		style: {color: "dodgerblue"},
