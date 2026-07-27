@@ -93,90 +93,90 @@ h-6" aria-hidden="true" aria-label="y-axis tick"/>
     </g>
     <text y=".71em" aria-label="y-axis label" text-anchor="start" transform="translate(3 3)">↑ Karma vestiges (30 days)</text>
     <path fill="none" stroke="currentColor" d="
-M184.325
+M172.034
 410
 v6
-m139.304
+m125.533
 -6
 v6
-m134.81
+m121.483
 -6
 v6
-m139.304
+m125.532
 -6
 v6
-m134.81
+m121.483
 -6
 v6" aria-hidden="true" aria-label="x-axis tick"/>
     <g aria-label="x-axis tick label" font-variant="tabular-nums">
-        <text transform="translate(184.325 419)"><tspan x="0" y=".71em">Mar</tspan><tspan x="0" dy="1em">2026</tspan></text>
-        <text y=".71em" transform="translate(323.629 419)">Apr</text>
-        <text y=".71em" transform="translate(458.439 419)">May</text>
-        <text y=".71em" transform="translate(597.743 419)">Jun</text>
-        <text y=".71em" transform="translate(732.553 419)">Jul</text>
+        <text transform="translate(172.034 419)"><tspan x="0" y=".71em">Mar</tspan><tspan x="0" dy="1em">2026</tspan></text>
+        <text y=".71em" transform="translate(297.567 419)">Apr</text>
+        <text y=".71em" transform="translate(419.05 419)">May</text>
+        <text y=".71em" transform="translate(544.582 419)">Jun</text>
+        <text y=".71em" transform="translate(666.065 419)">Jul</text>
     </g>
     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="
 M60
 410
-h8.987
-l2.996
+h8.099
+l2.699
 -116.667
-h17.975
-L92.954
-235
-h17.974
-l2.996
+h16.198
+l2.7
 -58.333
-h41.941
-l2.996
+h16.198
+l2.699
+-58.333
+h37.795
+l2.699
 116.666
-h17.974
-l2.996
+h16.198
+l2.7
 58.334
-h8.988
-l2.995
+h8.099
+l2.699
 -58.334
-h5.992
-l2.996
+h5.4
+l2.699
 58.334
-h29.957
-L233.755
-235
-h2.996
-l2.996
+h26.996
+l2.7
 -116.667
-h8.987
-L251.73
-60
-h23.966
-l2.996
+h2.7
+l2.699
+-116.667
+h8.099
+l2.7
+-58.333
+h21.597
+l2.699
 58.333
-h20.97
-L302.658
+h18.898
+L278.669
 60
-h14.979
-l2.996
+h13.498
+l2.7
 116.667
-h2.996
-l2.995
+h2.7
+l2.699
 116.666
-h8.988
-l2.996
+h8.099
+l2.7
 58.334
-h53.924
-l2.995
+h48.593
+l2.699
 -58.334
-h32.954
-L431.477
-235
-h41.941
-l2.996
+h29.696
+l2.7
+-58.333
+h37.795
+l2.699
 58.333
-h2.995
-l2.996
+h2.7
+l2.699
 58.334
-h32.954
-L518.354
-410
+h29.696
+l2.7
+58.333
 H770" aria-label="line"/>
 </svg>
