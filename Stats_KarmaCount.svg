@@ -93,97 +93,108 @@ h-6" aria-hidden="true" aria-label="y-axis tick"/>
     </g>
     <text y=".71em" aria-label="y-axis label" text-anchor="start" transform="translate(3 3)">↑ Karma vestiges (30 days)</text>
     <path fill="none" stroke="currentColor" d="
-M156.924
+M138.156
 410
 v6
-m108.602
+m87.574
 -6
 v6
-m105.099
+m84.747
 -6
 v6
-m108.602
+m87.573
 -6
 v6
-m105.099
+m84.748
 -6
 v6
-m108.602
+m87.573
+-6
+v6
+m87.573
+-6
+v6
+m84.748
 -6
 v6" aria-hidden="true" aria-label="x-axis tick"/>
     <g aria-label="x-axis tick label" font-variant="tabular-nums">
-        <text transform="translate(156.924 419)"><tspan x="0" y=".71em">Mar</tspan><tspan x="0" dy="1em">2026</tspan></text>
-        <text y=".71em" transform="translate(265.526 419)">Apr</text>
-        <text y=".71em" transform="translate(370.625 419)">May</text>
-        <text y=".71em" transform="translate(479.227 419)">Jun</text>
-        <text y=".71em" transform="translate(584.326 419)">Jul</text>
-        <text y=".71em" transform="translate(692.928 419)">Aug</text>
+        <text transform="translate(138.156 419)"><tspan x="0" y=".71em">Mar</tspan><tspan x="0" dy="1em">2026</tspan></text>
+        <text y=".71em" transform="translate(225.73 419)">Apr</text>
+        <text y=".71em" transform="translate(310.477 419)">May</text>
+        <text y=".71em" transform="translate(398.05 419)">Jun</text>
+        <text y=".71em" transform="translate(482.798 419)">Jul</text>
+        <text y=".71em" transform="translate(570.371 419)">Aug</text>
+        <text y=".71em" transform="translate(657.944 419)">Sep</text>
+        <text y=".71em" transform="translate(742.692 419)">Oct</text>
     </g>
     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="
 M60
 410
-h7.007
-l2.335
+h5.65
+l1.883
 -116.667
-h14.013
-L85.691
+h11.3
+L80.716
 235
-h14.013
-l2.335
+h11.3
+l1.883
 -58.333
-h32.698
-l2.335
+h26.366
+l1.884
 116.666
-h14.014
-l2.335
+h11.299
+l1.884
 58.334
-h7.007
-l2.335
+h5.649
+l1.884
 -58.334
-h4.671
-l2.336
+h3.766
+l1.884
 58.334
-h23.355
-L195.461
+h18.832
+L169.231
 235
-h2.335
-l2.336
+h1.883
+l1.883
 -116.667
-h7.006
-L209.474
+h5.65
+L180.531
 60
-h18.684
-l2.335
+h15.066
+l1.883
 58.333
-h16.349
-L249.178
+h13.183
+L212.546
 60
-h11.677
-l2.336
+h9.417
+l1.883
 116.667
-h2.335
-l2.336
+h1.883
+l1.884
 116.666
-h7.006
-l2.336
+h5.65
+l1.883
 58.334
-h42.039
-l2.336
+h33.899
+l1.883
 -58.334
-h25.691
-L349.605
+h20.717
+L293.528
 235
-h32.698
-l2.335
+h26.366
+l1.883
 58.333
-h2.336
-l2.335
+h1.883
+l1.884
 58.334
-H415
-L417.336
+h20.716
+L348.143
 410
-h287.269
-l2.336
+h231.645
+l1.883
 -58.333
+h52.732
+L636.286
+410
 H770" aria-label="line"/>
 </svg>
